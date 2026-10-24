@@ -1,0 +1,59 @@
+userAgent: claude-code-digest/0.1
+timezone: Europe/Lisbon
+lookbackHours: 36
+maxItems: 7
+candidateCap: 40
+
+fetch:
+  timeoutMs: 20000
+  retries: 2
+
+enrich:
+  maxChars: 6000
+  topComments: 3
+
+triage:
+  model: claude-haiku-5-5
+  batchSize: 10
+  # Haiku 5.5 at ~80k tokens/day costs about $0.01; this only trips on a runaway loop.
+  dailyTokenBudget: 400000
+
+cutoffs:
+  mustRead: 7
+  skim: 5
+
+seenRetentionDays: 45
+
+# Relevance gate for tiers 2 and 3, matched case-insensitively on title + excerpt.
+# A source's own `keywords` list replaces this one; an empty list disables the gate.
+keywords:
+  - claude code
+  - claude
+  - anthropic
+  - agentic coding
+  - coding agent
+  - subagent
+  - mcp
+  - skills
+  - hooks
+  - claude.md
+  - agents.md
+  - worktree
+  - context engineering
+  - codex
+  - cursor
+  - amp
+  - harness
+
+# Tier 3 titles matching any of these (case-insensitive regex) are dropped outright.
+hypePatterns:
+  - '^\d+\s+(tips|tricks|things|ways|reasons|prompts|hacks)\b'
+  - '\bgame[- ]?changer\b'
+  - '\b10x\b'
+  - '\bkiller\b'
+  - '\binsane\b'
+  - "you'?re using it wrong"
+  - '\busage limits?\b'
+  - '\b(rate[- ]?limit(ed)?|limit reached)\b'
+  - '\bis (it )?down\b'
+  - '\b(beta testers?|looking for testers)\b'

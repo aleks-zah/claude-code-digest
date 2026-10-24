@@ -1,0 +1,147 @@
+# Endpoints verified 2026-10-24. Optional per-source fields:
+#   keywords: replaces the global relevance gate ([] disables it)
+#   minScore: engagement floor (points / upvotes), tier 3 only
+#   maxItemsPerRun: keep only the newest N entries
+#   collapse: day   merges a day's entries into one item (releases, commits)
+
+- id: claude-code-releases
+  name: Claude Code releases
+  tier: 1
+  adapter: feed
+  url: https://github.com/anthropics/claude-code/releases.atom
+  collapse: day
+
+# The feed exists but its newest item is Week 37 (15 Sep); kept because it costs one request.
+- id: claude-code-whats-new
+  name: Claude Code what's new
+  tier: 1
+  adapter: feed
+  url: https://code.claude.com/docs/en/whats-new/rss.xml
+
+# No feed. Engineering articles now live under /research/, which also holds papers, so only
+# the links on this index count.
+- id: anthropic-engineering
+  name: Anthropic engineering
+  tier: 1
+  adapter: html-index
+  url: https://www.anthropic.com/engineering
+  linkPattern: ^/research/[^/]+$
+
+- id: anthropic-news
+  name: Anthropic news
+  tier: 1
+  adapter: html-index
+  url: https://www.anthropic.com/news
+  linkPattern: ^/news/[^/]+$
+  keywords: [claude code, claude, model, developer, developers, api, sdk, agent, agents, mcp]
+
+- id: claude-blog
+  name: Claude blog
+  tier: 1
+  adapter: html-index
+  url: https://claude.com/resources/articles?products=claude-code
+  linkPattern: ^/resources/articles/[^/]+$
+
+- id: simon-willison-claude-code
+  name: Simon Willison
+  tier: 2
+  adapter: feed
+  url: https://simonwillison.net/tags/claude-code.atom
+  keywords: []
+
+- id: simon-willison-coding-agents
+  name: Simon Willison
+  tier: 2
+  adapter: feed
+  url: https://simonwillison.net/tags/coding-agents.atom
+  keywords: []
+
+- id: latent-space
+  name: Latent Space
+  tier: 2
+  adapter: feed
+  url: https://www.latent.space/feed
+
+- id: addy-osmani
+  name: Addy Osmani
+  tier: 2
+  adapter: feed
+  url: https://addyo.substack.com/feed
+
+- id: pragmatic-engineer
+  name: The Pragmatic Engineer
+  tier: 2
+  adapter: feed
+  url: https://newsletter.pragmaticengineer.com/feed
+
+- id: every-source-code
+  name: Every, Source Code
+  tier: 2
+  adapter: feed
+  url: https://every.to/source-code/feed
+
+- id: jesse-vincent
+  name: Jesse Vincent
+  tier: 2
+  adapter: feed
+  url: https://blog.fsck.com/feed/feed.xml
+
+- id: superpowers-releases
+  name: Superpowers releases
+  tier: 2
+  adapter: feed
+  url: https://github.com/obra/superpowers/releases.atom
+  collapse: day
+  keywords: []
+
+# No feed or sitemap found.
+- id: humanlayer
+  name: HumanLayer
+  tier: 2
+  adapter: html-index
+  url: https://www.humanlayer.dev/blog
+  linkPattern: ^/blog/[^/]+$
+
+- id: hamel-husain
+  name: Hamel Husain
+  tier: 2
+  adapter: feed
+  url: https://hamel.dev/index.xml
+
+- id: awesome-claude-code
+  name: awesome-claude-code
+  tier: 3
+  adapter: readme-links
+  url: https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/README.md
+  keywords: []
+
+- id: claude-code-best-practice
+  name: claude-code-best-practice
+  tier: 3
+  adapter: feed
+  url: https://github.com/shanraisshan/claude-code-best-practice/commits/main.atom
+  collapse: day
+  keywords: []
+
+# Unauthenticated JSON returns 403 and RSS 429s, so these need REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET.
+- id: r-claudecode
+  name: r/ClaudeCode
+  tier: 3
+  adapter: reddit
+  subreddit: ClaudeCode
+  minScore: 50
+
+- id: r-claudeai
+  name: r/ClaudeAI
+  tier: 3
+  adapter: reddit
+  subreddit: ClaudeAI
+  minScore: 150
+  keywords: [claude code]
+
+- id: hacker-news
+  name: HN
+  tier: 3
+  adapter: hn
+  queries: ['"claude code"', anthropic, '"coding agent"']
+  minScore: 30
