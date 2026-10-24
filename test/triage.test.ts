@@ -154,3 +154,25 @@ test("system prompt fills in the profile and every example", () => {
   assert.match(prompt, /Already uses/);
   assert.equal(prompt.match(/<example /g)?.length, 6);
 });
+
+test("select: protected tier-1 items rank first, everything counts toward maxItems", async () => {
+  const { select } = await import("../src/triage/score.ts");
+  const t1 = item({ url: "t1", id: "t1", tier: 1 });
+  const hi = items("h1", "h2", "h3");
+  const low = item({ url: "low", id: "low", tier: 3 });
+  const bad = item({ url: "bad", id: "bad", tier: 3 });
+  const heur = item({ url: "heur", id: "heur", tier: 3 });
+  const scores = new Map<string, ItemScore>([
+    ["t1", score("t1", { relevance: 2, novelty: 0, actionability: 0, evidence: 1 })],
+    ["h1", score("h1")],
+    ["h2", score("h2", { evidence: 2 })],
+    ["h3", score("h3", { evidence: 1 })],
+    ["low", score("low", { relevance: 0, novelty: 0, actionability: 0, evidence: 0 })],
+  ]);
+  const s = select([low, ...hi, t1, bad, heur], scores, new Set(["heur"]), { ...config, maxItems: 3 });
+  assert.deepEqual(s.kept.map((c) => c.item.id), ["t1", "h1", "h2"]);
+  assert.deepEqual(
+    Object.fromEntries(s.dropped.map((d) => [d.item.id, d.reason])),
+    { low: "low-score", bad: "invalid-output", h3: "over-limit", heur: "over-limit" },
+  );
+});
