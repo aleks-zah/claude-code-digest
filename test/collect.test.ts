@@ -6,7 +6,10 @@ import { parseHits } from "../src/collect/hn.ts";
 import { diffLinks, extractIndexLinks } from "../src/collect/htmlIndex.ts";
 import { extractReadmeLinks } from "../src/collect/readmeLinks.ts";
 import { parseListing } from "../src/collect/reddit.ts";
-import { parseRobots } from "../src/http.ts";
+import { collectAll } from "../src/collect/index.ts";
+import { collectFeed } from "../src/collect/feed.ts";
+import type { Source } from "../src/config.ts";
+import { parseRobots, withRetries } from "../src/http.ts";
 
 const fixture = (name: string) => readFileSync(new URL(`fixtures/${name}`, import.meta.url), "utf8");
 
@@ -112,4 +115,56 @@ test("robots: Disallow prefixes for * only", () => {
     ),
   );
   assert.deepEqual(rules, ["/admin/"]);
+});
+
+test("withRetries: retries up to the limit, then rethrows", async () => {
+  let calls = 0;
+  const flaky = async () => {
+    if (++calls < 3) throw new Error(`fail ${calls}`);
+    return "ok";
+  };
+  assert.equal(await withRetries(flaky, 2, 0), "ok");
+  calls = -10;
+  await assert.rejects(withRetries(flaky, 2, 0), /fail -7/);
+});
+
+function stubFetch(routes: Record<string, () => Response>) {
+  const original = globalThis.fetch;
+  globalThis.fetch = (async (input: string | URL | Request) => {
+    const route = routes[String(input)];
+    if (!route) throw new Error(`unexpected fetch ${String(input)}`);
+    return route();
+  }) as typeof fetch;
+  return () => (globalThis.fetch = original);
+}
+
+test("collectAll: a source returning HTTP 500 is reported as failed and the rest still collect", async (t) => {
+  t.after(
+    stubFetch({
+      "https://ok.test/releases.atom": () => new Response(fixture("releases.atom")),
+      "https://broken.test/feed": () => new Response("oops", { status: 500 }),
+    }),
+  );
+  const sources = [
+    { id: "ok", name: "OK", tier: 1, enabled: true, adapter: "feed", url: "https://ok.test/releases.atom" },
+    { id: "broken", name: "Broken", tier: 2, enabled: true, adapter: "feed", url: "https://broken.test/feed" },
+  ] satisfies Source[];
+  const results = await collectAll(sources, { since: new Date("2026-10-22T00:00:00Z"), retries: 0, linkSets: {} });
+  assert.deepEqual(
+    results.map((r) => [r.sourceId, r.entries.length, r.error]),
+    [
+      ["ok", 3, undefined],
+      ["broken", 0, "HTTP 500 for https://broken.test/feed"],
+    ],
+  );
+});
+
+test("feed: relative links resolve against the feed URL, unparseable ones are dropped", async (t) => {
+  const rss = `<rss><channel>
+    <item><title>Rel</title><link>/p/relative</link><pubDate>Fri, 23 Oct 2026 10:00:00 GMT</pubDate></item>
+    <item><title>Bad</title><link>https://</link><pubDate>Fri, 23 Oct 2026 10:00:00 GMT</pubDate></item>
+  </channel></rss>`;
+  t.after(stubFetch({ "https://blog.test/feed.xml": () => new Response(rss) }));
+  const entries = await collectFeed("https://blog.test/feed.xml", new Date("2026-10-22T00:00:00Z"));
+  assert.deepEqual(entries.map((e) => e.url), ["https://blog.test/p/relative"]);
 });

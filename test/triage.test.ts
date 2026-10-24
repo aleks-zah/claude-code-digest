@@ -59,11 +59,18 @@ interface FakeResponse {
   error?: Error;
 }
 
+interface CreateParams {
+  messages: { content: string }[];
+  system: unknown;
+  output_config: { effort: string; format: { type: string } };
+  tool_choice?: unknown;
+}
+
 function fakeClient(responses: FakeResponse[]) {
-  const calls: { ids: string[]; params: any }[] = [];
+  const calls: { ids: string[]; params: CreateParams }[] = [];
   const client = {
     messages: {
-      create: async (params: any) => {
+      create: async (params: CreateParams) => {
         calls.push({ ids: [...params.messages[0].content.matchAll(/<item id="([^"]+)"/g)].map((m) => m[1]), params });
         const r = responses.shift()!;
         if (r.error) throw r.error;

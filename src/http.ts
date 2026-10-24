@@ -89,13 +89,13 @@ export function parseRobots(text: string): string[] {
   return disallow;
 }
 
-export async function withRetries<T>(fn: () => Promise<T>, retries: number): Promise<T> {
+export async function withRetries<T>(fn: () => Promise<T>, retries: number, baseDelayMs = 1000): Promise<T> {
   for (let attempt = 0; ; attempt++) {
     try {
       return await fn();
     } catch (err) {
       if (attempt >= retries) throw err;
-      await sleep(1000 * 2 ** attempt);
+      await sleep(baseDelayMs * 2 ** attempt);
     }
   }
 }

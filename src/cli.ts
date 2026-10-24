@@ -7,12 +7,12 @@ import { collapseByDay, dropSeen, mergeSources, toItems } from "./dedup.ts";
 import { enrich } from "./enrich.ts";
 import { configureHttp } from "./http.ts";
 import { log } from "./log.ts";
-import { prefilter } from "./prefilter.ts";
+import { prefilter, type DropReason } from "./prefilter.ts";
 import { State, type RunRecord } from "./state.ts";
 import { sendMessage, telegramTarget } from "./telegram.ts";
 import { buildSystemPrompt, triage, type TriageResult } from "./triage/llm.ts";
 import type { ItemScore } from "./triage/schema.ts";
-import { select } from "./triage/score.ts";
+import { select, type FinalDropReason } from "./triage/score.ts";
 import type { Item } from "./types.ts";
 
 const USAGE = "usage: digest run [--dry-run] [--source <id>] [--since <hours>] [--no-llm]";
@@ -95,7 +95,7 @@ async function main(): Promise<void> {
   const unscored = new Set((triaged ? triaged.unscored : candidates).map((c) => c.id));
   const selection = select(candidates, triaged?.scores ?? new Map(), unscored, config);
 
-  const dropCounts: Record<string, number> = {};
+  const dropCounts: Partial<Record<DropReason | FinalDropReason, number>> = {};
   for (const { reason } of [...pre.dropped, ...selection.dropped]) dropCounts[reason] = (dropCounts[reason] ?? 0) + 1;
 
   let heuristicsNote: string | undefined;

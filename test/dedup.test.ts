@@ -6,7 +6,7 @@ import { item, sourceMap } from "./helpers.ts";
 
 const sources = sourceMap(
   { id: "simon", name: "Simon Willison", tier: 2 },
-  { id: "hn", name: "HN", tier: 3, adapter: "hn", queries: ["x"] } as never,
+  { id: "hn", name: "HN", tier: 3, adapter: "hn", queries: ["x"] },
   { id: "releases", tier: 1, collapse: "day" },
 );
 

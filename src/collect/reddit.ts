@@ -48,11 +48,11 @@ export function parseListing(listing: Listing<RedditPost>, since: Date): RawEntr
     .filter((p) => p.created_utc * 1000 >= since.getTime())
     .map((p) => {
       const thread = `https://www.reddit.com${p.permalink}`;
-      const host = p.is_self ? "" : new URL(p.url).hostname;
+      const host = p.is_self ? "" : new URL(p.url, "https://www.reddit.com").hostname;
       // Image, video and gallery posts point at Reddit's own media hosts; the thread is the content.
       const isMedia = /(^|\.)(redd\.it|reddit\.com)$/.test(host);
       return {
-        url: p.is_self || isMedia ? thread : p.url,
+        url: p.is_self || isMedia ? thread : new URL(p.url, "https://www.reddit.com").href,
         title: p.title,
         excerpt: truncate(collapse(p.selftext ?? ""), 500),
         publishedAt: new Date(p.created_utc * 1000),

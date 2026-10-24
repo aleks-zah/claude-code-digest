@@ -33,7 +33,8 @@ export function collectAll(sources: Source[], ctx: CollectContext): Promise<Sour
     sources.map(async (s): Promise<SourceResult> => {
       try {
         const { entries, linkSet } = await withRetries(() => collectOne(s, ctx), ctx.retries);
-        const newest = entries.toSorted((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
+        const valid = entries.filter((e) => /^https?:\/\//.test(e.url) && URL.canParse(e.url));
+        const newest = valid.toSorted((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
         return { sourceId: s.id, entries: newest.slice(0, s.maxItemsPerRun), linkSet };
       } catch (err) {
         return { sourceId: s.id, entries: [], error: err instanceof Error ? err.message : String(err) };

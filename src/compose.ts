@@ -1,5 +1,6 @@
+import type { DropReason } from "./prefilter.ts";
 import { truncate } from "./text.ts";
-import type { Choice } from "./triage/score.ts";
+import type { Choice, FinalDropReason } from "./triage/score.ts";
 
 export const TELEGRAM_LIMIT = 4096;
 
@@ -8,7 +9,7 @@ export interface DigestInput {
   timezone: string;
   kept: Choice[];
   scanned: number;
-  dropCounts: Record<string, number>;
+  dropCounts: Partial<Record<DropReason | FinalDropReason, number>>;
   failedSources: string[];
   sourceName: (id: string) => string;
   /** Set when some or all items skipped the LLM; shown in the footer. */
@@ -21,7 +22,7 @@ const SECTIONS = [
   { kind: "unscored", title: "UNSCORED (heuristics only)" },
 ] as const;
 
-const DROP_LABELS: Record<string, string> = {
+const DROP_LABELS: Record<DropReason | FinalDropReason, string> = {
   "off-topic": "off-topic",
   "low-engagement": "low engagement",
   noise: "hype",
@@ -50,10 +51,10 @@ function renderChoice(c: Choice, sourceName: (id: string) => string): string {
 
 function footer(input: DigestInput, keptCount: number): string[] {
   const lines: string[] = [];
-  const counts = Object.entries(input.dropCounts).filter(([, n]) => n > 0);
+  const counts = (Object.entries(input.dropCounts) as [keyof typeof DROP_LABELS, number][]).filter(([, n]) => n > 0);
   if (keptCount > 0 && counts.length) {
     const total = counts.reduce((sum, [, n]) => sum + n, 0);
-    lines.push([`Dropped ${total}`, ...counts.map(([r, n]) => `${DROP_LABELS[r] ?? r}: ${n}`)].join(" · "));
+    lines.push([`Dropped ${total}`, ...counts.map(([r, n]) => `${DROP_LABELS[r]}: ${n}`)].join(" · "));
   }
   if (input.failedSources.length) lines.push(`Unavailable: ${escapeHtml(input.failedSources.join(", "))}`);
   if (input.heuristicsNote) lines.push(escapeHtml(input.heuristicsNote));

@@ -35,7 +35,7 @@ test("state: a second run sees everything the first one saved; old entries are p
 });
 
 function fakeFetch(responses: { status: number; body: object }[]) {
-  const bodies: any[] = [];
+  const bodies: Record<string, unknown>[] = [];
   const fn = (async (_url: string, init: RequestInit) => {
     bodies.push(JSON.parse(init.body as string));
     const r = responses.shift()!;
