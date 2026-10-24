@@ -1,0 +1,59 @@
+name: digest
+
+on:
+  schedule:
+    # 06:47 UTC: 07:47 Lisbon in summer, 06:47 in winter. Off the hour to dodge peak-load delays.
+    - cron: "47 6 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Print the digest without sending it or writing state
+        type: boolean
+        default: false
+      since_hours:
+        description: Lookback window in hours (blank uses config.yaml)
+        type: string
+        default: ""
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Run digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          SINCE_HOURS: ${{ inputs.since_hours }}
+        run: |
+          args=(run)
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          if [ -n "$SINCE_HOURS" ]; then args+=(--since "$SINCE_HOURS"); fi
+          node src/cli.ts "${args[@]}"
+
+      - name: Commit state
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || git commit -m "chore: update digest state [skip ci]"
+          git push
