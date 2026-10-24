@@ -124,9 +124,11 @@
   keywords: []
 
 # Unauthenticated JSON returns 403 and RSS 429s, so these need REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET.
+# Disabled until Reddit approves the API access request (Responsible Builder Policy).
 - id: r-claudecode
   name: r/ClaudeCode
   tier: 3
+  enabled: false
   adapter: reddit
   subreddit: ClaudeCode
   minScore: 50
@@ -134,6 +136,7 @@
 - id: r-claudeai
   name: r/ClaudeAI
   tier: 3
+  enabled: false
   adapter: reddit
   subreddit: ClaudeAI
   minScore: 150
