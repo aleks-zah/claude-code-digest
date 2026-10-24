@@ -1,5 +1,4 @@
 import { parseArgs } from "node:util";
-import Anthropic from "@anthropic-ai/sdk";
 import { collectAll } from "./collect/index.ts";
 import { compose } from "./compose.ts";
 import { loadConfig, loadSources } from "./config.ts";
@@ -76,7 +75,6 @@ async function main(): Promise<void> {
   if (!values["no-llm"] && candidates.length > 0) {
     t = Date.now();
     triaged = await triage(candidates, {
-      client: new Anthropic({ maxRetries: 3 }),
       model: config.triage.model,
       system: buildSystemPrompt(),
       batchSize: config.triage.batchSize,

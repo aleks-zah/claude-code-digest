@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { buildSystemPrompt, parseResults, renderItems, triage, type TriageOptions } from "../src/triage/llm.ts";
+import { buildSystemPrompt, parseResults, renderItems, triage, type ClaudeRunner, type TriageOptions } from "../src/triage/llm.ts";
 import type { ItemScore } from "../src/triage/schema.ts";
 import { finalScore, verdict } from "../src/triage/score.ts";
 import { config, item } from "./helpers.ts";
@@ -41,68 +41,60 @@ test("verdict: cut-offs, tier-1 protection, prompt injection always dropped", ()
 });
 
 test("parseResults validates each result on its own and rejects unknown ids", () => {
-  const text = JSON.stringify({
+  const output = {
     results: [score("a"), { ...score("b"), category: "hype" }, score("zzz"), { ...score("c"), relevance: 7 }, score("a", { novelty: 0 })],
-  });
-  const { valid, problems } = parseResults(text, new Set(["a", "b", "c"]));
+  };
+  const { valid, problems } = parseResults(output, new Set(["a", "b", "c"]));
   assert.deepEqual(valid, [score("a")]);
   assert.equal(problems.length, 3);
   assert.match(problems.join("\n"), /invalid result for b/);
   assert.match(problems.join("\n"), /unknown id zzz/);
   assert.match(problems.join("\n"), /invalid result for c/);
-  assert.deepEqual(parseResults("not json", new Set()).problems, ["response is not valid JSON"]);
+  assert.deepEqual(parseResults(undefined, new Set()).problems, ["output has no results array"]);
 });
 
-interface FakeResponse {
+interface FakeResult {
   results?: unknown[];
-  stop_reason?: string;
-  error?: Error;
+  isError?: boolean;
+  stdout?: string;
+  throws?: Error;
 }
 
-interface CreateParams {
-  messages: { content: string }[];
-  system: unknown;
-  output_config: { effort: string; format: { type: string } };
-  tool_choice?: unknown;
-}
-
-function fakeClient(responses: FakeResponse[]) {
-  const calls: { ids: string[]; params: CreateParams }[] = [];
-  const client = {
-    messages: {
-      create: async (params: CreateParams) => {
-        calls.push({ ids: [...params.messages[0].content.matchAll(/<item id="([^"]+)"/g)].map((m) => m[1]), params });
-        const r = responses.shift()!;
-        if (r.error) throw r.error;
-        return {
-          stop_reason: r.stop_reason ?? "end_turn",
-          content: [{ type: "thinking", thinking: "" }, { type: "text", text: JSON.stringify({ results: r.results ?? [] }) }],
-          usage: { input_tokens: 1000, output_tokens: 200, cache_read_input_tokens: 0, cache_creation_input_tokens: 0 },
-        };
-      },
-    },
+/** Mirrors the `claude -p --output-format json` result object. */
+function fakeRunner(responses: FakeResult[]) {
+  const calls: { ids: string[]; args: string[] }[] = [];
+  const run: ClaudeRunner = async (args, input) => {
+    calls.push({ ids: [...input.matchAll(/<item id="([^"]+)"/g)].map((m) => m[1]), args });
+    const r = responses.shift()!;
+    if (r.throws) throw r.throws;
+    if (r.stdout !== undefined) return r.stdout;
+    return JSON.stringify({
+      type: "result",
+      subtype: r.isError ? "error_during_execution" : "success",
+      is_error: r.isError ?? false,
+      result: r.isError ? "API Error: 529 overloaded" : "",
+      ...(!r.isError && { structured_output: { results: r.results ?? [] } }),
+      usage: { input_tokens: 2, cache_creation_input_tokens: 998, cache_read_input_tokens: 0, output_tokens: 200 },
+    });
   };
-  return { client, calls };
+  return { run, calls };
 }
 
-const opts = (client: unknown, overrides: Partial<TriageOptions> = {}): TriageOptions => ({
-  client: client as TriageOptions["client"],
+const opts = (run: ClaudeRunner, overrides: Partial<TriageOptions> = {}): TriageOptions => ({
   model: "claude-haiku-5-5",
   system: "system",
   batchSize: 10,
   tokenBudget: 400000,
   sourceName: (id) => id,
+  run,
   ...overrides,
 });
 
 const items = (...ids: string[]) => ids.map((id) => item({ url: `https://x.test/${id}`, id }));
 
 test("schema failure is retried once with only the failed items, then dropped and logged", async () => {
-  const { client, calls } = fakeClient([
-    { results: [score("a"), { ...score("b"), relevance: 9 }] },
-    { results: [] },
-  ]);
-  const r = await triage(items("a", "b", "c"), opts(client));
+  const { run, calls } = fakeRunner([{ results: [score("a"), { ...score("b"), relevance: 9 }] }, { results: [] }]);
+  const r = await triage(items("a", "b", "c"), opts(run));
   assert.deepEqual(calls.map((c) => c.ids), [["a", "b", "c"], ["b", "c"]]);
   assert.deepEqual([...r.scores.keys()], ["a"]);
   assert.deepEqual(r.failed.map((i) => i.id), ["b", "c"]);
@@ -110,40 +102,58 @@ test("schema failure is retried once with only the failed items, then dropped an
   assert.equal(r.tokens, 2400);
 });
 
-test("request shape: cached system prompt, low effort, JSON schema output", async () => {
-  const { client, calls } = fakeClient([{ results: [score("a")] }]);
-  await triage(items("a"), opts(client));
-  const p = calls[0].params;
-  assert.deepEqual(p.system, [{ type: "text", text: "system", cache_control: { type: "ephemeral" } }]);
-  assert.equal(p.output_config.effort, "low");
-  assert.equal(p.output_config.format.type, "json_schema");
-  assert.equal(p.tool_choice, undefined);
+test("claude args: subscription model, low effort, schema output, no tools or customizations", async () => {
+  const { run, calls } = fakeRunner([{ results: [score("a")] }]);
+  await triage(items("a"), opts(run));
+  const args = calls[0].args;
+  const flag = (name: string) => args[args.indexOf(name) + 1];
+  assert.equal(args[0], "-p");
+  assert.equal(flag("--model"), "claude-haiku-5-5");
+  assert.equal(flag("--effort"), "low");
+  assert.equal(flag("--system-prompt"), "system");
+  assert.equal(flag("--tools"), "");
+  assert.equal(flag("--output-format"), "json");
+  for (const f of ["--safe-mode", "--strict-mcp-config", "--disable-slash-commands", "--no-session-persistence"]) {
+    assert.ok(args.includes(f), `missing ${f}`);
+  }
+  const schema = JSON.parse(flag("--json-schema"));
+  assert.equal(schema.$schema, undefined);
+  assert.deepEqual(schema.properties.results.items.properties.category.enum, [
+    "release", "workflow", "tool", "research", "opinion", "incident",
+  ]);
 });
 
-test("a refusal fails the batch like a schema failure", async () => {
-  const { client } = fakeClient([{ stop_reason: "refusal" }, { results: [score("a")] }]);
-  const r = await triage(items("a"), opts(client));
+test("an error result fails the batch and is retried", async () => {
+  const { run } = fakeRunner([{ isError: true }, { results: [score("a")] }]);
+  const r = await triage(items("a"), opts(run));
   assert.deepEqual([...r.scores.keys()], ["a"]);
+  assert.equal(r.tokens, 2400);
+});
+
+test("non-JSON output fails the batch", async () => {
+  const { run } = fakeRunner([{ stdout: "Error: not logged in" }, { stdout: "Error: not logged in" }]);
+  const r = await triage(items("a"), opts(run));
+  assert.equal(r.llmFailed, true);
 });
 
 test("batches of batchSize", async () => {
-  const { client, calls } = fakeClient([{ results: [score("a"), score("b")] }, { results: [score("c")] }]);
-  await triage(items("a", "b", "c"), opts(client, { batchSize: 2 }));
+  const { run, calls } = fakeRunner([{ results: [score("a"), score("b")] }, { results: [score("c")] }]);
+  await triage(items("a", "b", "c"), opts(run, { batchSize: 2 }));
   assert.deepEqual(calls.map((c) => c.ids), [["a", "b"], ["c"]]);
 });
 
 test("token budget: remaining items are left unscored", async () => {
-  const { client, calls } = fakeClient([{ results: [score("a"), score("b")] }]);
-  const r = await triage(items("a", "b", "c", "d"), opts(client, { batchSize: 2, tokenBudget: 1000 }));
+  const { run, calls } = fakeRunner([{ results: [score("a"), score("b")] }]);
+  const r = await triage(items("a", "b", "c", "d"), opts(run, { batchSize: 2, tokenBudget: 1000 }));
   assert.equal(calls.length, 1);
   assert.equal(r.budgetHit, true);
   assert.deepEqual(r.unscored.map((i) => i.id), ["c", "d"]);
 });
 
 test("every call failing marks triage as failed so the digest falls back to heuristics", async () => {
-  const err = new Error("overloaded");
-  const { client } = fakeClient([{ error: err }, { error: err }]);
-  const r = await triage(items("a", "b"), opts(client));
+  const err = new Error("spawn claude ENOENT");
+  const { run } = fakeRunner([{ throws: err }, { throws: err }]);
+  const r = await triage(items("a", "b"), opts(run));
   assert.equal(r.llmFailed, true);
   assert.deepEqual(r.unscored.map((i) => i.id), ["a", "b"]);
   assert.deepEqual(r.failed, []);

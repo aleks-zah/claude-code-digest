@@ -15,7 +15,8 @@ enrich:
 triage:
   model: claude-haiku-5-5
   batchSize: 10
-  # Haiku 5.5 at ~80k tokens/day costs about $0.01; this only trips on a runaway loop.
+  # Runs on the Claude subscription via `claude -p`. A normal day is ~80k tokens; this only
+  # trips on a runaway loop.
   dailyTokenBudget: 400000
 
 cutoffs:
