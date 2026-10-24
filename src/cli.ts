@@ -7,6 +7,9 @@ import { configureHttp } from "./http.ts";
 import { log } from "./log.ts";
 import { prefilter } from "./prefilter.ts";
 import { loadLinkSets, loadSeen } from "./state.ts";
+import { buildSystemPrompt, triage } from "./triage/llm.ts";
+import { verdict } from "./triage/score.ts";
+import Anthropic from "@anthropic-ai/sdk";
 
 const { values, positionals } = parseArgs({
   allowPositionals: true,
@@ -55,7 +58,32 @@ const t1 = Date.now();
 const candidates = await enrich(preCandidates, config.enrich.maxChars, config.enrich.topComments);
 log("enrich", { ms: Date.now() - t1, withText: candidates.filter((c) => c.text).length, out: candidates.length });
 
-for (const c of candidates) {
-  const names = c.sources.map((id) => sourcesById.get(id)!.name).join(" + ");
-  console.log(`[T${c.tier}] ${c.title}\n     ${names} · ${c.url} · text ${c.text?.length ?? 0} · comments ${c.comments?.length ?? 0}`);
+const sourceName = (id: string) => sourcesById.get(id)!.name;
+
+if (!values["no-llm"]) {
+  const t2 = Date.now();
+  const result = await triage(candidates, {
+    client: new Anthropic({ maxRetries: 3 }),
+    model: config.triage.model,
+    system: buildSystemPrompt(),
+    batchSize: config.triage.batchSize,
+    tokenBudget: config.triage.dailyTokenBudget,
+    sourceName,
+  });
+  log("triage", {
+    ms: Date.now() - t2,
+    scored: result.scores.size,
+    failed: result.failed.length,
+    unscored: result.unscored.length,
+    tokens: result.tokens,
+  });
+  for (const c of candidates) {
+    const s = result.scores.get(c.id);
+    if (!s) continue;
+    const v = verdict(s, c.tier, config.cutoffs);
+    console.log(`${v.score.toFixed(1).padStart(4)} ${v.kind.padEnd(4)} [T${c.tier}] ${c.title}`);
+    console.log(`     r${s.relevance} n${s.novelty} a${s.actionability} e${s.evidence} ${s.hypeFlags.join(",")} | ${s.whyItMatters}`);
+  }
+} else {
+  for (const c of candidates) console.log(`[T${c.tier}] ${c.title} · ${c.sources.map(sourceName).join(" + ")}`);
 }

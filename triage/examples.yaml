@@ -1,0 +1,85 @@
+# Hand-written calibration set. Replace with real labeled items after a few weeks of state/runs/.
+- note: clear signal, official release with a new capability
+  item:
+    source: Claude Code releases
+    tier: 1
+    title: v2.1.300
+    excerpt: "Added PreToolUse hook matchers on file path globs, so a hook can block writes outside the workspace. Added --max-turns to headless mode."
+  expected:
+    relevance: 3
+    novelty: 3
+    actionability: 3
+    evidence: 3
+    hypeFlags: []
+    category: release
+    tryThis: Add a PreToolUse rule with a path glob that blocks writes outside the repo.
+
+- note: clear signal, practitioner postmortem with numbers
+  item:
+    source: HumanLayer
+    tier: 2
+    title: What broke when we ran 40 parallel agents on one monorepo
+    excerpt: "We measured merge conflicts, CI minutes and review time over six weeks. Shared task files cut conflicts 70%. Config and scripts in the post."
+  expected:
+    relevance: 3
+    novelty: 2
+    actionability: 3
+    evidence: 3
+    hypeFlags: []
+    category: workflow
+
+- note: clear hype, listicle with nothing new
+  item:
+    source: r/ClaudeCode
+    tier: 3
+    title: 15 Claude Code tricks that will 10x your productivity
+    excerpt: "Use CLAUDE.md! Ask it to plan first! Use subagents! These changed everything for me."
+  expected:
+    relevance: 2
+    novelty: 0
+    actionability: 1
+    evidence: 0
+    hypeFlags: [listicle, superlatives_without_evidence, rehash]
+    category: opinion
+
+- note: clear hype, vendor launch with an unverified benchmark
+  item:
+    source: HN
+    tier: 3
+    title: "Show HN: AgentX beats Claude Code by 300% on our internal benchmark"
+    excerpt: "Sign up for the waitlist. Our proprietary benchmark shows AgentX is the best coding agent ever built."
+  expected:
+    relevance: 1
+    novelty: 1
+    actionability: 0
+    evidence: 0
+    hypeFlags: [unverified_benchmark, vendor_marketing, self_promo_no_artifact]
+    category: tool
+
+- note: borderline, relevant opinion without much to apply
+  item:
+    source: The Pragmatic Engineer
+    tier: 2
+    title: "The Pulse: how teams are restructuring code review around agents"
+    excerpt: "Interviews with five engineering leads about review load since adopting coding agents. Paywalled after the intro."
+  expected:
+    relevance: 2
+    novelty: 2
+    actionability: 1
+    evidence: 2
+    hypeFlags: []
+    category: opinion
+
+- note: borderline, useful open-source tool, light on evidence
+  item:
+    source: HN
+    tier: 3
+    title: "Show HN: a tmux multiplexer that shows what each Claude Code session is doing"
+    excerpt: "Open source. Shows a live feed per agent and jumps to the next one waiting for input. Install with brew."
+  expected:
+    relevance: 3
+    novelty: 2
+    actionability: 2
+    evidence: 1
+    hypeFlags: []
+    category: tool
