@@ -50,7 +50,7 @@ Dedup reads the same state the Deliver stage writes, so a failed send never mark
 1. **Collect.** One adapter per source type (`rss`, `atom`, `github-releases`, `github-commits`, `reddit`, `hn-algolia`, `html-index`). Each returns raw entries published in the last 36 hours (overlap covers a missed run).
 2. **Normalize.** Map to one `Item` shape: `id` (hash of canonical URL), `source`, `sourceTier`, `url`, `title`, `author`, `publishedAt`, `excerpt`, `engagement` (points, comments, stars when available).
 3. **Dedup.** Drop items whose canonical URL is in state (strip UTM and tracking params, trailing slashes, `www.`; resolve HN and Reddit link posts to the target URL). Merge the same URL seen via several sources into one item and keep all discovery sources, since cross-source pickup is a signal.
-4. **Prefilter (heuristics, no LLM).** Relevance keywords, engagement thresholds and hype patterns. Cuts the batch to roughly 15 to 40 candidates.
+4. **Prefilter (heuristics, no LLM).** Engagement thresholds and a candidate cap of 40. Relevance and hype are left to the LLM.
 5. **Enrich.** Fetch the page and extract readable text (Readability-style), truncated to about 6k characters. For Reddit and HN, add the top 3 comments.
 6. **Triage (LLM).** Score each candidate against the rubric in the Triage section; strict JSON output.
 7. **Compose.** Rank by score, cap at 7, group by category, render Telegram HTML.
@@ -67,10 +67,10 @@ Start with these 18 sources in `sources.yaml`; endpoints marked "verify" are bes
 | Claude Code releases | 1 | github-releases | `https://github.com/anthropics/claude-code/releases.atom` | Version-by-version changes. Collapse multiple patch releases per day into one item. |
 | Claude Code "What's new" | 1 | html-index | `https://code.claude.com/docs/en/whats-new` | Weekly feature digest. Check for a feed first; else diff entries by heading. |
 | Anthropic engineering blog | 1 | html-index | `https://www.anthropic.com/engineering` | Infrequent, high value. No known feed: diff article URLs on the index page. |
-| Anthropic news | 1 | html-index | `https://www.anthropic.com/news` | Keep only model launches and developer-tool posts (keyword filter). |
+| Anthropic news | 1 | html-index | `https://www.anthropic.com/news` | Most posts are not developer-facing; triage scores those low on relevance. |
 | Claude blog, Claude Code category | 1 | html-index | `https://claude.com/blog/category/claude-code` | Product how-tos. Diff article URLs. |
-| Simon Willison | 2 | atom | `https://simonwillison.net/atom/everything/` | 5 to 10 posts a day; prefilter by keyword. A per-tag feed may exist (verify). |
-| Latent Space / AINews | 2 | rss | `https://www.latent.space/feed` | High volume; keyword prefilter is mandatory. |
+| Simon Willison | 2 | atom | `https://simonwillison.net/atom/everything/` | 5 to 10 posts a day. A per-tag feed may exist (verify). |
+| Latent Space / AINews | 2 | rss | `https://www.latent.space/feed` | High volume. |
 | Addy Osmani (Elevate) | 2 | rss | `https://addyo.substack.com/feed` | Low volume. |
 | The Pragmatic Engineer | 2 | rss | `https://newsletter.pragmaticengineer.com/feed` | Mostly paywalled: title and public excerpt only. |
 | Every, Source Code (Kieran Klaassen) | 2 | rss | `https://every.to/source-code` (verify feed) | Compound-engineering workflows. |
@@ -83,19 +83,17 @@ Start with these 18 sources in `sources.yaml`; endpoints marked "verify" are bes
 | r/ClaudeAI | 3 | reddit | `https://www.reddit.com/r/ClaudeAI/top.json?t=day&limit=25` | Score at least 150 and mentions Claude Code. |
 | Hacker News | 3 | hn-algolia | `https://hn.algolia.com/api/v1/search_by_date?query="claude code"&tags=story` | Add `numericFilters=points>40,created_at_i>{since}`. |
 
-**Tiers.** 1 = official: always a candidate, skips the hype prefilter, still scored. 2 = trusted practitioner: +1 score bonus. 3 = community: must earn its place on content and engagement.
+**Tiers.** 1 = official: always a candidate, skips the engagement floor, still scored. 2 = trusted practitioner: +1 score bonus. 3 = community: must earn its place on content and engagement.
 
-Each source in `sources.yaml` carries `id`, `name`, `tier`, `adapter`, `url`, optional `keywords`, `minScore`, `maxItemsPerRun` and `enabled`, so sources can be added or muted without code changes.
+Each source in `sources.yaml` carries `id`, `name`, `tier`, `adapter`, `url`, optional `minScore`, `maxItemsPerRun` and `enabled`, so sources can be added or muted without code changes.
 
 ## Triage middleware
 
-Triage runs in two stages: deterministic heuristics throw out the obvious noise for free, then an LLM scores what is left on four sub-scores, and code (not the model) turns those into the final score.
+Triage runs in two stages: cheap heuristics bound the batch size, then an LLM scores what is left on four sub-scores, and code (not the model) turns those into the final score.
 
 ### Stage A: heuristic prefilter
 
-- **Relevance gate** (tiers 2 and 3): title or excerpt must match at least one keyword: Claude Code, Claude, Anthropic, agentic coding, coding agent, subagent, MCP, skills, hooks, CLAUDE.md, AGENTS.md, worktree, context engineering, Codex, Cursor, Amp, harness. Keywords live in config.
 - **Engagement floor** (tier 3): per-source `minScore` from the Sources table.
-- **Hype patterns** (tier 3 only, drop outright): number-listicle titles ("27 tips you didn't know"), "game changer", "10x", "killer", "insane", "you're using it wrong", usage-limit rants, "is down" posts, beta-tester recruiting.
 - **Staleness:** drop items whose subject is a release more than 14 days old (rehash of old news).
 - **Cap:** at most 40 candidates go to the LLM; keep the highest tier and engagement first.
 
@@ -158,7 +156,7 @@ WORTH A SKIM
   Why: concrete setup for multi-repo work, with config shown.
   Simon Willison + HN (2 sources) · link
 
-Dropped 58 · noise: 31 · off-topic: 19 · stale: 8
+Dropped 58 · low score: 31 · low engagement: 19 · stale: 8
 ```
 
 - Each item: category tag, title as link, "Why" line, optional "Try" line, source names (multiple when cross-posted).

@@ -26,7 +26,7 @@ const input = (kept: Choice[], overrides: Partial<DigestInput> = {}): DigestInpu
   timezone: config.timezone,
   kept,
   scanned: 63,
-  dropCounts: { "off-topic": 19, "low-score": 31, noise: 0 },
+  dropCounts: { "low-engagement": 19, "low-score": 31, "over-cap": 0 },
   failedSources: [],
   brokenSources: [],
   sourceName: (id) => names[id],
@@ -68,7 +68,7 @@ test("renders sections, links, why/try lines and cross-posted sources", () => {
       "  Why: Lets your PR agent refuse writes.",
       "  Simon Willison + HN (2 sources)",
       "",
-      "Dropped 50 · off-topic: 19 · low score: 31",
+      "Dropped 50 · low engagement: 19 · low score: 31",
     ].join("\n"),
   );
 });

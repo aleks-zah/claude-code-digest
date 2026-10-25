@@ -25,9 +25,7 @@ const SECTIONS = [
 ] as const;
 
 const DROP_LABELS: Record<DropReason | FinalDropReason, string> = {
-  "off-topic": "off-topic",
   "low-engagement": "low engagement",
-  noise: "hype",
   "over-cap": "over candidate cap",
   "low-score": "low score",
   "prompt-injection": "prompt injection",

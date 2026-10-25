@@ -1,5 +1,4 @@
 # Endpoints verified 2026-10-24. Optional per-source fields:
-#   keywords: replaces the global relevance gate ([] disables it)
 #   minScore: engagement floor (points / upvotes), tier 3 only
 #   maxItemsPerRun: keep only the newest N entries
 #   collapse: day   merges a day's entries into one item (releases, commits)
@@ -33,7 +32,6 @@
   adapter: html-index
   url: https://www.anthropic.com/news
   linkPattern: ^/news/[^/]+$
-  keywords: [claude code, claude, model, developer, developers, api, sdk, agent, agents, mcp]
 
 - id: claude-blog
   name: Claude blog
@@ -47,14 +45,12 @@
   tier: 2
   adapter: feed
   url: https://simonwillison.net/tags/claude-code.atom
-  keywords: []
 
 - id: simon-willison-coding-agents
   name: Simon Willison
   tier: 2
   adapter: feed
   url: https://simonwillison.net/tags/coding-agents.atom
-  keywords: []
 
 - id: latent-space
   name: Latent Space
@@ -76,7 +72,6 @@
   tier: 2
   adapter: feed
   url: https://addyosmani.com/rss.xml
-  keywords: [agentic, agent, agents, claude, llm, ai]
 
 - id: pragmatic-engineer
   name: The Pragmatic Engineer
@@ -102,7 +97,6 @@
   adapter: feed
   url: https://github.com/obra/superpowers/releases.atom
   collapse: day
-  keywords: []
 
 # No feed or sitemap found.
 - id: humanlayer
@@ -123,7 +117,6 @@
   tier: 3
   adapter: readme-links
   url: https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/README.md
-  keywords: []
 
 - id: claude-code-best-practice
   name: claude-code-best-practice
@@ -131,7 +124,6 @@
   adapter: feed
   url: https://github.com/shanraisshan/claude-code-best-practice/commits/main.atom
   collapse: day
-  keywords: []
 
 # Unauthenticated JSON returns 403 and RSS 429s, so these need REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET.
 # Disabled until Reddit approves the API access request (Responsible Builder Policy).
@@ -150,7 +142,6 @@
   adapter: reddit
   subreddit: ClaudeAI
   minScore: 150
-  keywords: [claude code]
 
 - id: hacker-news
   name: HN

@@ -15,46 +15,12 @@ enrich:
 triage:
   model: claude-haiku-5-5
   batchSize: 10
-  # Runs on the Claude subscription via `claude -p`. A normal day is ~80k tokens; this only
-  # trips on a runaway loop.
-  dailyTokenBudget: 400000
+  # Runs on the Claude subscription via `claude -p`. A full candidateCap run is ~150k tokens;
+  # this only trips on a runaway loop.
+  dailyTokenBudget: 2000000
 
 cutoffs:
   mustRead: 7
   skim: 5
 
 seenRetentionDays: 45
-
-# Relevance gate for tiers 2 and 3, matched case-insensitively on title + excerpt.
-# A source's own `keywords` list replaces this one; an empty list disables the gate.
-keywords:
-  - claude code
-  - claude
-  - anthropic
-  - agentic coding
-  - coding agent
-  - subagent
-  - mcp
-  - skills
-  - hooks
-  - claude.md
-  - agents.md
-  - worktree
-  - context engineering
-  - codex
-  - cursor
-  - amp
-  - harness
-
-# Tier 3 titles matching any of these (case-insensitive regex) are dropped outright.
-hypePatterns:
-  - '^\d+\s+(tips|tricks|things|ways|reasons|prompts|hacks)\b'
-  - '\bgame[- ]?changer\b'
-  - '\b10x\b'
-  - '\bkiller\b'
-  - '\binsane\b'
-  - "you'?re using it wrong"
-  - '\busage limits?\b'
-  - '\b(rate[- ]?limit(ed)?|limit reached)\b'
-  - '\bis (it )?down\b'
-  - '\b(beta testers?|looking for testers)\b'

@@ -17,8 +17,6 @@ const ConfigSchema = z.object({
   }),
   cutoffs: z.object({ mustRead: z.number(), skim: z.number() }),
   seenRetentionDays: z.number().int().positive(),
-  keywords: z.array(z.string()),
-  hypePatterns: z.array(z.string()),
 });
 
 const SourceBase = z.object({
@@ -26,7 +24,6 @@ const SourceBase = z.object({
   name: z.string(),
   tier: z.union([z.literal(1), z.literal(2), z.literal(3)]),
   enabled: z.boolean().default(true),
-  keywords: z.array(z.string()).optional(),
   minScore: z.number().int().min(0).optional(),
   maxItemsPerRun: z.number().int().positive().optional(),
 });

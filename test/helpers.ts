@@ -33,9 +33,7 @@ export const config: Config = {
   candidateCap: 40,
   fetch: { timeoutMs: 1000, retries: 0 },
   enrich: { maxChars: 6000, topComments: 3 },
-  triage: { model: "claude-haiku-5-5", batchSize: 10, dailyTokenBudget: 400000 },
+  triage: { model: "claude-haiku-5-5", batchSize: 10, dailyTokenBudget: 2000000 },
   cutoffs: { mustRead: 7, skim: 5 },
   seenRetentionDays: 45,
-  keywords: ["claude code", "mcp", "amp"],
-  hypePatterns: ["^\\d+\\s+(tips|tricks)\\b", "\\bgame[- ]?changer\\b"],
 };

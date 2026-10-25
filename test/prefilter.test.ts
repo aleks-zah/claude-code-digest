@@ -5,9 +5,7 @@ import { config, item, sourceMap } from "./helpers.ts";
 
 const sources = sourceMap(
   { id: "official", tier: 1 },
-  { id: "news", tier: 1, keywords: ["claude"] },
   { id: "blog", tier: 2 },
-  { id: "tagged", tier: 2, keywords: [] },
   { id: "reddit", tier: 3, minScore: 50 },
 );
 
@@ -16,33 +14,13 @@ const reasons = (items: ReturnType<typeof item>[]) => {
   return { kept: candidates.map((c) => c.url), dropped: Object.fromEntries(dropped.map((d) => [d.item.url, d.reason])) };
 };
 
-test("relevance gate: tier 1 passes unless the source sets keywords; [] disables the gate", () => {
-  const r = reasons([
-    item({ url: "u1", sources: ["official"], tier: 1, title: "Company update" }),
-    item({ url: "u2", sources: ["news"], tier: 1, title: "Company update" }),
-    item({ url: "u3", sources: ["blog"], title: "Gardening" }),
-    item({ url: "u4", sources: ["blog"], title: "My MCP setup" }),
-    item({ url: "u5", sources: ["tagged"], title: "Gardening" }),
-  ]);
-  assert.deepEqual(r.dropped, { u2: "off-topic", u3: "off-topic" });
-});
-
-test("keywords match whole words only", () => {
-  const r = reasons([
-    item({ url: "u1", sources: ["blog"], title: "An example of champions" }),
-    item({ url: "u2", sources: ["blog"], title: "Amp vs Claude Code" }),
-  ]);
-  assert.deepEqual(r.dropped, { u1: "off-topic" });
-});
-
-test("tier 3: engagement floor and hype patterns", () => {
+test("engagement floor applies to tier 3 only", () => {
   const r = reasons([
     item({ url: "u1", sources: ["reddit"], tier: 3, title: "Claude Code hooks", engagement: { points: 10 } }),
-    item({ url: "u2", sources: ["reddit"], tier: 3, title: "27 tips for Claude Code", engagement: { points: 500 } }),
-    item({ url: "u3", sources: ["reddit"], tier: 3, title: "Claude Code hooks", engagement: { points: 60 } }),
-    item({ url: "u4", sources: ["blog"], tier: 2, title: "Claude Code is a game changer" }),
+    item({ url: "u2", sources: ["reddit"], tier: 3, title: "Claude Code hooks", engagement: { points: 60 } }),
+    item({ url: "u3", sources: ["blog"], tier: 2, title: "Gardening", engagement: { points: 0 } }),
   ]);
-  assert.deepEqual(r.dropped, { u1: "low-engagement", u2: "noise" });
+  assert.deepEqual(r.dropped, { u1: "low-engagement" });
 });
 
 test("cap keeps the highest tier, then engagement", () => {
