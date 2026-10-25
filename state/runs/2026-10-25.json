@@ -1,106 +1,13 @@
 {
   "date": "2026-10-25",
-  "startedAt": "2026-10-25T10:20:44.474Z",
+  "startedAt": "2026-10-25T10:44:33.945Z",
   "sinceHours": 36,
   "counts": {
-    "fresh": 4,
-    "candidates": 3,
-    "kept": 1,
-    "off-topic": 1,
-    "low-score": 2
+    "fresh": 0,
+    "candidates": 0,
+    "kept": 0
   },
-  "tokens": 10826,
+  "tokens": 0,
   "failedSources": [],
-  "items": [
-    {
-      "id": "a74122a98f64e132",
-      "url": "https://latent.space/p/ainews-kimi-31/",
-      "title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
-      "sources": [
-        "latent-space"
-      ],
-      "tier": 2,
-      "engagement": {},
-      "verdict": "drop",
-      "reason": "off-topic"
-    },
-    {
-      "id": "2a8846dac16ed524",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/162bac91d0d016d30f3e9dce44ce9fdd6cb4c074",
-      "title": "changelog(claude-commands): append 2026-10-25 description-sync run en… (+13 more)",
-      "sources": [
-        "claude-code-best-practice"
-      ],
-      "tier": 3,
-      "engagement": {},
-      "verdict": "drop",
-      "reason": "low-score",
-      "score": {
-        "id": "2a8846dac16ed524",
-        "relevance": 1,
-        "novelty": 0,
-        "actionability": 0,
-        "evidence": 1,
-        "hypeFlags": [
-          "rehash"
-        ],
-        "category": "tool",
-        "summary": "Automated changelog commits from a best-practices repo syncing command and field descriptions to v2.1.310; no new mechanics described.",
-        "whyItMatters": "Bot-generated doc-sync noise with no new technique; the reader gains nothing beyond the official release notes.",
-        "confidence": "medium"
-      },
-      "final": 0.2
-    },
-    {
-      "id": "b74dde0ef53d81e8",
-      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/d0f2d264de1ec097640688bac45c1b6377c57333",
-      "title": "chore: append 2026-10-24 subagents drift entry (v2.1.310, 4 ON HOLD i… (+5 more)",
-      "sources": [
-        "claude-code-best-practice"
-      ],
-      "tier": 3,
-      "engagement": {},
-      "verdict": "drop",
-      "reason": "low-score",
-      "score": {
-        "id": "b74dde0ef53d81e8",
-        "relevance": 1,
-        "novelty": 0,
-        "actionability": 0,
-        "evidence": 1,
-        "hypeFlags": [
-          "rehash"
-        ],
-        "category": "tool",
-        "summary": "Automated commit log entries for subagent and skill drift checks and badge updates against v2.1.310; no substantive content.",
-        "whyItMatters": "Routine repo maintenance commits with no new subagent configuration or technique for the reader to apply.",
-        "confidence": "medium"
-      },
-      "final": 0.2
-    },
-    {
-      "id": "97c5df49eed3f0cf",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "title": "v2.1.310",
-      "sources": [
-        "claude-code-releases"
-      ],
-      "tier": 1,
-      "engagement": {},
-      "verdict": "must",
-      "score": {
-        "id": "97c5df49eed3f0cf",
-        "relevance": 3,
-        "novelty": 2,
-        "actionability": 2,
-        "evidence": 3,
-        "hypeFlags": [],
-        "category": "release",
-        "summary": "Claude Code v2.1.310 adds the Monitor tool and plugin monitors on Bedrock, Vertex and Foundry, plus fixes for gateway beta-header rejects, compaction, and Windows hook bypass.",
-        "whyItMatters": "Monitor tool access on third-party clouds and the Windows PreToolUse hook fix matter for hook-based guardrails and headless agent setups.",
-        "confidence": "high"
-      },
-      "final": 8.3
-    }
-  ]
+  "items": []
 }
