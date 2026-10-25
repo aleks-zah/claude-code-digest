@@ -62,11 +62,21 @@
   adapter: feed
   url: https://www.latent.space/feed
 
+# The Substack feed returns 403 from GitHub Actions runners (2026-10-25); the blog feed is a
+# separate, slower stream that does not carry newsletter-only issues.
 - id: addy-osmani
   name: Addy Osmani
   tier: 2
+  enabled: false
   adapter: feed
   url: https://addyo.substack.com/feed
+
+- id: addy-osmani-blog
+  name: Addy Osmani
+  tier: 2
+  adapter: feed
+  url: https://addyosmani.com/rss.xml
+  keywords: [agentic, agent, agents, claude, llm, ai]
 
 - id: pragmatic-engineer
   name: The Pragmatic Engineer
