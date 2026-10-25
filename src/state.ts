@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import type { SourceResult } from "./types.ts";
 
 /** Canonical-URL id to the date it was first seen (YYYY-MM-DD). */
@@ -40,6 +40,18 @@ export class State {
     return this.read<Record<string, string[]>>("link-sets.json", {});
   }
 
+  /** Delivered runs before `today`, newest first. */
+  loadRunsBefore(today: string, limit: number): RunRecord[] {
+    const dir = `${this.dir}/runs`;
+    if (!existsSync(dir)) return [];
+    return readdirSync(dir)
+      .filter((f) => f.endsWith(".json") && f.slice(0, -5) < today)
+      .sort()
+      .reverse()
+      .slice(0, limit)
+      .map((f) => this.read<RunRecord>(`runs/${f}`, {} as RunRecord));
+  }
+
   /** Called only after the digest was delivered, so a failed send never marks items as seen. */
   save(opts: { seenIds: string[]; results: SourceResult[]; run: RunRecord; today: string; retentionDays: number }): void {
     const cutoff = new Date(Date.parse(opts.today) - opts.retentionDays * 86400_000).toISOString().slice(0, 10);
@@ -53,4 +65,21 @@ export class State {
 
     this.write(`runs/${opts.today}.json`, opts.run);
   }
+}
+
+/**
+ * How many delivered runs in a row each of today's failed sources has failed, today included.
+ * A run without the source in its failures ends the streak.
+ */
+export function failureStreaks(failedToday: string[], previousRuns: RunRecord[]): Map<string, number> {
+  return new Map(
+    failedToday.map((id) => {
+      let runs = 1;
+      for (const run of previousRuns) {
+        if (!run.failedSources.some((f) => f.id === id)) break;
+        runs++;
+      }
+      return [id, runs];
+    }),
+  );
 }

@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 import { dropSeen } from "../src/dedup.ts";
-import { State, type RunRecord } from "../src/state.ts";
+import { failureStreaks, State, type RunRecord } from "../src/state.ts";
 import { sendMessage } from "../src/telegram.ts";
 import { item } from "./helpers.ts";
 
@@ -66,4 +66,31 @@ test("telegram: other errors fail without leaking the token", async () => {
     assert.doesNotMatch(err.message, /secret-token/);
     return true;
   });
+});
+
+test("failure streaks count consecutive delivered runs before today, plus today", () => {
+  const state = new State(mkdtempSync(join(tmpdir(), "digest-")));
+  const failing = (date: string, ...ids: string[]) =>
+    state.save({
+      seenIds: [],
+      results: [],
+      run: { ...run, date, failedSources: ids.map((id) => ({ id, error: "HTTP 403" })) },
+      today: date,
+      retentionDays: 45,
+    });
+  failing("2026-10-20", "a");
+  failing("2026-10-21", "b");
+  failing("2026-10-22", "a", "b");
+  failing("2026-10-23", "a", "b");
+  // A rerun on the same day must not count today's earlier run twice.
+  failing("2026-10-24", "a");
+
+  const previous = state.loadRunsBefore("2026-10-24", 10);
+  assert.deepEqual(previous.map((r) => r.date), ["2026-10-23", "2026-10-22", "2026-10-21", "2026-10-20"]);
+  assert.deepEqual(
+    Object.fromEntries(failureStreaks(["a", "b", "c"], previous)),
+    { a: 3, b: 4, c: 1 },
+  );
+  assert.deepEqual(state.loadRunsBefore("2026-10-24", 2).map((r) => r.date), ["2026-10-23", "2026-10-22"]);
+  assert.deepEqual(new State(mkdtempSync(join(tmpdir(), "digest-"))).loadRunsBefore("2026-10-24", 2), []);
 });

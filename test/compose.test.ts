@@ -28,6 +28,7 @@ const input = (kept: Choice[], overrides: Partial<DigestInput> = {}): DigestInpu
   scanned: 63,
   dropCounts: { "off-topic": 19, "low-score": 31, noise: 0 },
   failedSources: [],
+  brokenSources: [],
   sourceName: (id) => names[id],
   ...overrides,
 });
@@ -118,4 +119,21 @@ test("heuristics-only items have no Why line and the footer says so", () => {
   );
   assert.match(msg, /<b>UNSCORED \(heuristics only\)<\/b>\n• <a href="https:\/\/x.test">T<\/a>\n  HN/);
   assert.match(msg, /Heuristics only: LLM triage failed\.$/);
+});
+
+test("sources failing several runs in a row get a Needs fixing line with the error", () => {
+  const [msg] = compose(
+    input([], {
+      failedSources: ["Addy Osmani", "HN"],
+      brokenSources: [{ name: "Addy Osmani", runs: 3, error: "HTTP 403 for https://addyo.substack.com/feed" }],
+    }),
+  );
+  assert.equal(
+    msg,
+    [
+      "Nothing worth your time today (63 scanned).",
+      "Unavailable: Addy Osmani, HN",
+      "Needs fixing: Addy Osmani failed 3 runs in a row (HTTP 403 for https://addyo.substack.com/feed)",
+    ].join("\n"),
+  );
 });

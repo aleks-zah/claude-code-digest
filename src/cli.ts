@@ -7,12 +7,15 @@ import { enrich } from "./enrich.ts";
 import { configureHttp } from "./http.ts";
 import { log } from "./log.ts";
 import { prefilter, type DropReason } from "./prefilter.ts";
-import { State, type RunRecord } from "./state.ts";
+import { failureStreaks, State, type RunRecord } from "./state.ts";
 import { sendMessage, telegramTarget } from "./telegram.ts";
 import { buildSystemPrompt, triage, type TriageResult } from "./triage/llm.ts";
 import type { ItemScore } from "./triage/schema.ts";
 import { select, type FinalDropReason } from "./triage/score.ts";
 import type { Item } from "./types.ts";
+
+/** One failure is often transient; this many delivered runs in a row means the endpoint likely changed. */
+const FAILURE_STREAK = 3;
 
 const USAGE = "usage: digest run [--dry-run] [--source <id>] [--since <hours>] [--no-llm]";
 
@@ -61,6 +64,15 @@ async function main(): Promise<void> {
   });
   for (const r of failedSources) log("collect.source_failed", { source: r.sourceId, error: r.error });
 
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: config.timezone }).format(now);
+  const streaks = failureStreaks(
+    failedSources.map((r) => r.sourceId),
+    state.loadRunsBefore(today, 30),
+  );
+  const brokenSources = failedSources
+    .filter((r) => streaks.get(r.sourceId)! >= FAILURE_STREAK)
+    .map((r) => ({ name: sourceName(r.sourceId), runs: streaks.get(r.sourceId)!, error: r.error! }));
+
   const fresh = mergeSources(
     collapseByDay(dropSeen(toItems(results, sourcesById), state.loadSeen()), sourcesById, config.enrich.maxChars),
   );
@@ -108,6 +120,7 @@ async function main(): Promise<void> {
     scanned: fresh.length,
     dropCounts,
     failedSources: failedSources.map((r) => sourceName(r.sourceId)),
+    brokenSources,
     sourceName,
     heuristicsNote,
   });
@@ -121,7 +134,6 @@ async function main(): Promise<void> {
   for (const m of messages) await sendMessage(telegram!, m, true);
   log("deliver", { messages: messages.length });
 
-  const today = new Intl.DateTimeFormat("en-CA", { timeZone: config.timezone }).format(now);
   const outcomes: { item: Item; verdict: string; reason?: string; score?: ItemScore; final?: number }[] = [
     ...pre.dropped.map((d) => ({ item: d.item, verdict: "drop", reason: d.reason })),
     ...selection.dropped.map((d) => ({ item: d.item, verdict: "drop", reason: d.reason, score: d.score, final: d.verdict?.score })),

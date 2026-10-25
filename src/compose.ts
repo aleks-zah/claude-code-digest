@@ -11,6 +11,8 @@ export interface DigestInput {
   scanned: number;
   dropCounts: Partial<Record<DropReason | FinalDropReason, number>>;
   failedSources: string[];
+  /** Sources that have failed several runs in a row, so the endpoint likely needs fixing. */
+  brokenSources: { name: string; runs: number; error: string }[];
   sourceName: (id: string) => string;
   /** Set when some or all items skipped the LLM; shown in the footer. */
   heuristicsNote?: string;
@@ -57,6 +59,9 @@ function footer(input: DigestInput, keptCount: number): string[] {
     lines.push([`Dropped ${total}`, ...counts.map(([r, n]) => `${DROP_LABELS[r]}: ${n}`)].join(" · "));
   }
   if (input.failedSources.length) lines.push(`Unavailable: ${escapeHtml(input.failedSources.join(", "))}`);
+  for (const b of input.brokenSources) {
+    lines.push(`Needs fixing: ${escapeHtml(b.name)} failed ${b.runs} runs in a row (${escapeHtml(truncate(b.error, 120))})`);
+  }
   if (input.heuristicsNote) lines.push(escapeHtml(input.heuristicsNote));
   return lines;
 }
