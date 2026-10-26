@@ -2,8 +2,8 @@ name: digest
 
 on:
   schedule:
-    # 06:47 UTC: 07:47 Lisbon in summer, 06:47 in winter. Off the hour to dodge peak-load delays.
-    - cron: "47 6 * * *"
+    # 06:48 UTC: 07:48 Lisbon in summer, 06:48 in winter. Off the hour to dodge peak-load delays.
+    - cron: "48 6 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
