@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-26",
+  "startedAt": "2026-10-26T09:15:06.699Z",
+  "sinceHours": 36,
+  "counts": {
+    "fresh": 4,
+    "candidates": 4,
+    "kept": 1,
+    "low-score": 3
+  },
+  "tokens": 13341,
+  "failedSources": [],
+  "items": [
+    {
+      "id": "240888442444abd5",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 303,
+        "comments": 293
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "240888442444abd5",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Speculative essay on why LLM API prices fell sharply across OpenAI and Anthropic models from June to October 2026, with cache-read pricing analysis.",
+        "whyItMatters": "Cache-read price cuts matter for agent cost, but the piece is mostly market speculation about competitor motives rather than config or measured tooling.",
+        "confidence": "medium"
+      },
+      "final": 2.5
+    },
+    {
+      "id": "c97d9e8c7c64ae8e",
+      "url": "https://techbronerd.substack.com/p/openai-and-anthropic-wanted-to-replace",
+      "title": "What Adobe v ArtCraft teaches us",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 89,
+        "comments": 98
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "c97d9e8c7c64ae8e",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Discussion of an article on Adobe versus ArtCraft; the item text is only HN comments about Photoshop-style software and AI commoditization.",
+        "whyItMatters": "Covers generative-AI business economics and creative software, outside this reader's interest in agent workflows and Claude Code practice.",
+        "confidence": "low"
+      },
+      "final": 0
+    },
+    {
+      "id": "f622bf113e2e9bde",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/9d31b3e6563ce5848c0db2ee6994ff6b50bce54f",
+      "title": "docs(subagents): update Last Updated badge to Oct 26, 2026 v2.1.310 (+9 more)",
+      "sources": [
+        "claude-code-best-practice"
+      ],
+      "tier": 3,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "f622bf113e2e9bde",
+        "relevance": 1,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Automated commit log from a best-practice docs repo syncing badges and drift checks against Claude Code v2.1.310; no feature details included.",
+        "whyItMatters": "Mentions a Claude Code version but describes no new flags, settings or behavior changes the reader could act on.",
+        "confidence": "medium"
+      },
+      "final": 1
+    },
+    {
+      "id": "12bb42da449f6fd6",
+      "url": "https://adrs.systems",
+      "title": "Show HN: ADRs for AI – Deliberation records for human–AI work, versioned in Git",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 42,
+        "comments": 22
+      },
+      "verdict": "skim",
+      "score": {
+        "id": "12bb42da449f6fd6",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 2,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "Open-source ADR-style template for recording human-AI decisions in Git, with a VS Code extension and an MCP server for agents to query open questions.",
+        "whyItMatters": "The MCP-queryable decision log and ORRCF question format offer a concrete way to keep agent reasoning across multi-repo work, though evidence of results is thin.",
+        "tryThis": "grep -rn '^### QST' docs/adr/ to list open agent-raised questions in a decision record repo.",
+        "confidence": "medium"
+      },
+      "final": 6
+    }
+  ]
+}
