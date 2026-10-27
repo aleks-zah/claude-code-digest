@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-27",
+  "startedAt": "2026-10-27T12:42:28.608Z",
+  "sinceHours": 36,
+  "counts": {
+    "fresh": 5,
+    "candidates": 5,
+    "kept": 1,
+    "low-score": 4
+  },
+  "tokens": 16572,
+  "failedSources": [],
+  "items": [
+    {
+      "id": "138f8fbf64952c3e",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "sources": [
+        "anthropic-news"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "138f8fbf64952c3e",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 3,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Anthropic announces it has filed a Form S-1 for a proposed Nasdaq IPO under the ticker ANT.",
+        "whyItMatters": "IPO and listing news falls in the funding and corporate category this reader excludes; it has no bearing on Claude Code workflows.",
+        "confidence": "high"
+      },
+      "final": 2
+    },
+    {
+      "id": "ca85c0384dbbb0fd",
+      "url": "https://latent.space/p/ainews-anthropic-s1/",
+      "title": "[AINews] Anthropic files for $2T IPO in 2 weeks: 1400% growth rate, 48% of revenue through cloud partners, 85% margin, $1B op profit in Q2, $134B cash in bank and $10B lifetime burn",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "ca85c0384dbbb0fd",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Newsletter roundup of Anthropic's S-1 with financial figures, cash burn estimates and investor commentary, some figures disputed.",
+        "whyItMatters": "Financial analysis of the IPO filing is outside this reader's interests, and its derived numbers are not verified.",
+        "confidence": "medium"
+      },
+      "final": 1.7
+    },
+    {
+      "id": "aaef23617908e375",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "title": "Anthropic S-1",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1645,
+        "comments": 1564
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "aaef23617908e375",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Raw text of Anthropic's S-1 registration statement, with cover page and corporate governance details, plus HN comments on demand and margins.",
+        "whyItMatters": "The filing and its investor-facing commentary cover corporate and financial matters this reader does not follow.",
+        "confidence": "medium"
+      },
+      "final": 0.7
+    },
+    {
+      "id": "cb8bc519ef88071d",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/64bcf8a97c26dcec6713f0b06e345274c16bf3db",
+      "title": "docs(subagents): update Last Updated badge to Oct 27, 2026 v2.1.311 (+14 more)",
+      "sources": [
+        "claude-code-best-practice"
+      ],
+      "tier": 3,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "cb8bc519ef88071d",
+        "relevance": 2,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "workflow",
+        "summary": "Automated bookkeeping commits in a Claude Code best-practice repo logging v2.1.311 drift checks, with no new techniques.",
+        "whyItMatters": "Repo tracks Claude Code docs, but these commits only restate the release and carry no new configuration or technique.",
+        "confidence": "medium"
+      },
+      "final": 2.7
+    },
+    {
+      "id": "93af44a64968d818",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
+      "title": "v2.1.311",
+      "sources": [
+        "claude-code-releases"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "must",
+      "score": {
+        "id": "93af44a64968d818",
+        "relevance": 3,
+        "novelty": 2,
+        "actionability": 2,
+        "evidence": 3,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Claude Code v2.1.311 adds self-hosted-runner idle-hold flags and fixes subagent MCP access, SubagentStop hook frequency, and CLAUDE.md compaction staleness.",
+        "whyItMatters": "Fixes to subagent MCP tools, SubagentStop hooks and post-compaction memory reads affect hook and subagent setups this reader relies on.",
+        "tryThis": "Upgrade to v2.1.311, then recheck SubagentStop hook fire counts and subagent MCP tool access.",
+        "confidence": "high"
+      },
+      "final": 8.3
+    }
+  ]
+}

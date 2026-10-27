@@ -30,6 +30,7 @@
     "https://www.anthropic.com/news/public-benefit-fund",
     "https://www.anthropic.com/news/cyber-verification-program",
     "https://www.anthropic.com/news/features",
+    "https://www.anthropic.com/news/s1-sec",
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://www.anthropic.com/news/product",
     "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
@@ -50,8 +51,7 @@
     "https://www.anthropic.com/news/accenture-embedded-evaluation",
     "https://www.anthropic.com/news/life-sciences-verification-program",
     "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-    "https://www.anthropic.com/news/improving-alignment-security-efforts",
-    "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+    "https://www.anthropic.com/news/improving-alignment-security-efforts"
   ],
   "claude-blog": [
     "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
