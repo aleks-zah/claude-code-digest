@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-28",
+  "startedAt": "2026-10-28T13:34:31.665Z",
+  "sinceHours": 36,
+  "counts": {
+    "fresh": 11,
+    "candidates": 11,
+    "kept": 6,
+    "low-score": 5
+  },
+  "tokens": 32265,
+  "failedSources": [],
+  "items": [
+    {
+      "id": "86f3cc373bd875ee",
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "sources": [
+        "anthropic-news",
+        "hacker-news"
+      ],
+      "tier": 1,
+      "engagement": {
+        "points": 45,
+        "comments": 29
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "86f3cc373bd875ee",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "opinion",
+        "summary": "Anthropic announces a GSA deal giving government buyers 40% off Claude products, plus FedRAMP authorization details.",
+        "whyItMatters": "Mostly procurement news; only relevant if your employer is a government contractor or agency.",
+        "confidence": "high"
+      },
+      "final": 1
+    },
+    {
+      "id": "e889cfac982d4f3f",
+      "url": "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/",
+      "title": "[AINews] Anthropic ends Coding Interviews: \"Hunger beats tenure\"",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "e889cfac982d4f3f",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "engagement_bait"
+        ],
+        "category": "opinion",
+        "summary": "Newsletter roundup covering Anthropic dropping coding interviews, Genie 4, and an AA index update with a secondhand ETH claim.",
+        "whyItMatters": "Mostly hiring commentary and unrelated model news; the Anthropic math claim is unsourced.",
+        "confidence": "medium"
+      },
+      "final": 2
+    },
+    {
+      "id": "f3e020b4efe87395",
+      "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+      "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 538,
+        "comments": 279
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "f3e020b4efe87395",
+        "relevance": 0,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Report on the Bartz settlement and a new Stanford authors' lawsuit against Anthropic over pirated books.",
+        "whyItMatters": "Copyright and litigation news, which the reader explicitly does not care about.",
+        "confidence": "high"
+      },
+      "final": 1.5
+    },
+    {
+      "id": "e05fd65d1ae06889",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "title": "Early progress on accelerating drug development with Claude",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 262,
+        "comments": 254
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "e05fd65d1ae06889",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 2,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "research",
+        "summary": "Anthropic reports early drug-development partnerships where Claude Code helped design molecules and optimize antibodies in labs.",
+        "whyItMatters": "Life-sciences application with limited relevance to a full-stack engineer's workflow.",
+        "confidence": "medium"
+      },
+      "final": 1.7
+    },
+    {
+      "id": "f85cc1d86bd4325a",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/77862da8956ae84be7e0dd451324fd3fd8d73499",
+      "title": "chore(badge): update subagents report Last Updated badge to v2.1.312 (+15 more)",
+      "sources": [
+        "claude-code-best-practice"
+      ],
+      "tier": 3,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "f85cc1d86bd4325a",
+        "relevance": 1,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "workflow",
+        "summary": "Automated commit log from the claude-code-best-practice repo syncing badges, star counts and command descriptions to Claude Code v2.1.312.",
+        "whyItMatters": "Mostly routine badge and star-count churn; the only substantive detail is eight command-description fixes, with no new feature or config explained.",
+        "confidence": "medium"
+      },
+      "final": 1.7
+    },
+    {
+      "id": "dc8a856f8c6596f8",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+      "title": "v2.1.312",
+      "sources": [
+        "claude-code-releases"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "must",
+      "score": {
+        "id": "dc8a856f8c6596f8",
+        "relevance": 3,
+        "novelty": 3,
+        "actionability": 3,
+        "evidence": 2,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Claude Code v2.1.312 adds oidc.user_id_claim for the apps gateway, hook concurrency limits, and fixes for large CLAUDE.md overwrites.",
+        "whyItMatters": "Hook concurrency caps, subagent compaction-window changes and CLAUDE.md overwrite fix directly affect your daily setup.",
+        "tryThis": "Set oidc.user_id_claim to oid for Entra ID; check hook counts against the new 24-concurrent cap.",
+        "confidence": "high"
+      },
+      "final": 9.3
+    },
+    {
+      "id": "3043e32bee1c7798",
+      "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
+      "title": "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+      "sources": [
+        "claude-blog"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "skim",
+      "score": {
+        "id": "3043e32bee1c7798",
+        "relevance": 3,
+        "novelty": 2,
+        "actionability": 2,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "workflow",
+        "summary": "Google Cloud guide to controlling, tracking and proving Claude Code spend via the Claude apps gateway, with per-group caps and model allowlists.",
+        "whyItMatters": "Gateway spend caps, model allowlists and admin API are concrete levers for managing Claude Code costs across teams.",
+        "tryThis": "Set a per-IdP-group model default and a weekly spend cap via the gateway admin API.",
+        "confidence": "medium"
+      },
+      "final": 5.5
+    },
+    {
+      "id": "f3da086cf64ca157",
+      "url": "https://latent.space/p/offline-coding/",
+      "title": "Coding From the Himalayas With an Offline AI Agent",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "must",
+      "score": {
+        "id": "f3da086cf64ca157",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 2,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "workflow",
+        "summary": "Walkthrough running OpenCode with Ollama and local Qwen3.5 9B for offline coding, with config and memory notes.",
+        "whyItMatters": "Offline agent setup is a niche but concrete option; not Claude Code, and benchmarks are cited from a model card.",
+        "tryThis": "Point OpenCode's baseURL at a local Ollama endpoint and disable web tools for offline runs.",
+        "confidence": "medium"
+      },
+      "final": 7
+    },
+    {
+      "id": "2247b97d682bdb4b",
+      "url": "https://latent.space/p/opus55/",
+      "title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "skim",
+      "score": {
+        "id": "2247b97d682bdb4b",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Latent Space podcast with Anthropic platform leads on Managed Agents, separating brain from hands and sandbox credential design.",
+        "whyItMatters": "The brain/hands credential isolation idea is a useful design lens for agent runtimes, though the episode is thin on specifics.",
+        "confidence": "medium"
+      },
+      "final": 6.2
+    },
+    {
+      "id": "add40a8fdaeffba7",
+      "url": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
+      "title": "How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "skim",
+      "score": {
+        "id": "add40a8fdaeffba7",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Same podcast episode as a transcript index page; covers Managed Agents, evals and CPU constraints with timestamps.",
+        "whyItMatters": "Duplicate of the other episode item; only the timestamp list adds topic coverage.",
+        "confidence": "medium"
+      },
+      "final": 6.2
+    },
+    {
+      "id": "65bf7f4a7a387b55",
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+      "title": "AI SRE: what is it, how could it change on-call – and does it work?",
+      "sources": [
+        "pragmatic-engineer"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "skim",
+      "score": {
+        "id": "65bf7f4a7a387b55",
+        "relevance": 1,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 2,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Pragmatic Engineer analysis of AI SRE tools, with reliability math on deploy frequency and vendor-sourced data on page volume.",
+        "whyItMatters": "Relevant to on-call rather than coding agents; the change-rate reliability model is a useful framing.",
+        "confidence": "medium"
+      },
+      "final": 5.8
+    }
+  ]
+}

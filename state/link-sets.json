@@ -28,9 +28,10 @@
   "anthropic-news": [
     "https://www.anthropic.com/news/announcements",
     "https://www.anthropic.com/news/public-benefit-fund",
-    "https://www.anthropic.com/news/cyber-verification-program",
-    "https://www.anthropic.com/news/features",
     "https://www.anthropic.com/news/s1-sec",
+    "https://www.anthropic.com/news/features",
+    "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "https://www.anthropic.com/news/partnerships",
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://www.anthropic.com/news/product",
     "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
@@ -45,21 +46,19 @@
     "https://www.anthropic.com/news/security",
     "https://www.anthropic.com/news/2026-usage-policy-update",
     "https://www.anthropic.com/news/genesis-mission-commitment",
-    "https://www.anthropic.com/news/partnerships",
+    "https://www.anthropic.com/news/cyber-verification-program",
     "https://www.anthropic.com/news/claude-frontier-academy",
     "https://www.anthropic.com/news/barclays-scales-claude",
     "https://www.anthropic.com/news/accenture-embedded-evaluation",
-    "https://www.anthropic.com/news/life-sciences-verification-program",
-    "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-    "https://www.anthropic.com/news/improving-alignment-security-efforts"
+    "https://www.anthropic.com/news/life-sciences-verification-program"
   ],
   "claude-blog": [
     "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+    "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
     "https://claude.com/resources/articles/code-review-is-now-generally-available",
     "https://claude.com/resources/articles/dashboards-and-motion",
     "https://claude.com/resources/articles/claude-code-mods",
-    "https://claude.com/resources/articles/claude-for-government-is-now-generally-available",
-    "https://claude.com/resources/articles/claude-opus-5-5-built-for-coding-sessions-that-use-more-context"
+    "https://claude.com/resources/articles/claude-for-government-is-now-generally-available"
   ],
   "humanlayer": [
     "https://www.humanlayer.dev/blog/open-sourcing-humanlayer",
