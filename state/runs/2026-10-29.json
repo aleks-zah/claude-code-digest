@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-29",
+  "startedAt": "2026-10-29T13:45:17.476Z",
+  "sinceHours": 36,
+  "counts": {
+    "fresh": 9,
+    "candidates": 9,
+    "kept": 2,
+    "low-score": 7
+  },
+  "tokens": 25295,
+  "failedSources": [],
+  "items": [
+    {
+      "id": "f7219ee448f554bd",
+      "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "title": "AI for Science expands to foundations and research institutions",
+      "sources": [
+        "anthropic-news"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "f7219ee448f554bd",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "release",
+        "summary": "Anthropic expands its AI for Science credit program to 20 foundations, institutions and research groups.",
+        "whyItMatters": "Funding and partnership news for science researchers; no Claude Code or agentic coding practice for this reader.",
+        "confidence": "high"
+      },
+      "final": 0
+    },
+    {
+      "id": "84b4c4707efe8f21",
+      "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
+      "title": "IDC brings Quanta into Claude and adopts Claude across the company",
+      "sources": [
+        "claude-blog"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "84b4c4707efe8f21",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "release",
+        "summary": "IDC launches an IDC Quanta MCP connector for Claude and reports internal Claude Code and Cowork productivity claims.",
+        "whyItMatters": "An MCP connector for market research, but the productivity figures are unmeasured customer-style claims with no method.",
+        "confidence": "medium"
+      },
+      "final": 1
+    },
+    {
+      "id": "ffc191e430349a61",
+      "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-at-google-and",
+      "title": "Software engineering at Google & CS education with Titus Winters",
+      "sources": [
+        "pragmatic-engineer"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "ffc191e430349a61",
+        "relevance": 2,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Pragmatic Engineer interview with Titus Winters on Google-scale refactoring, mandatory testing, and AI-driven outage increases.",
+        "whyItMatters": "Useful framing on verification and test discipline for agent output, though mostly anecdotal with no reusable config.",
+        "confidence": "medium"
+      },
+      "final": 4.5
+    },
+    {
+      "id": "a1a23e154cf4eaa8",
+      "url": "https://latent.space/p/ainews-gemini-4-carbon/",
+      "title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "a1a23e154cf4eaa8",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "unverified_benchmark"
+        ],
+        "category": "release",
+        "summary": "Roundup of Google's Gemini 4 Carbon launch and leaderboard results, mostly aggregated from social posts and vendor claims.",
+        "whyItMatters": "Model-comparison news; the coding-agent gap versus Claude Code is secondhand and harness-dependent, so not actionable.",
+        "confidence": "medium"
+      },
+      "final": 2
+    },
+    {
+      "id": "59788a007bb479e4",
+      "url": "https://latent.space/p/supabase/",
+      "title": "Why Agents Love Supabase",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "59788a007bb479e4",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Podcast on why coding agents favor Supabase, covering Docker-free local runtime, declarative schemas in Git, and compute.",
+        "whyItMatters": "Backend-for-agents context; the declarative-schema-in-Git idea is worth a look but the content is mostly commentary.",
+        "confidence": "medium"
+      },
+      "final": 4.3
+    },
+    {
+      "id": "70f2bbbd704a353d",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "title": "The October inflection point for vibe game development",
+      "sources": [
+        "simon-willison-claude-code"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "70f2bbbd704a353d",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Simon Willison argues Opus 5.5 can now build fun browser games from vibe prompts, showing four examples.",
+        "whyItMatters": "Vibe-coded game demos without a reusable engineering technique are outside this reader's interests.",
+        "confidence": "medium"
+      },
+      "final": 3.5
+    },
+    {
+      "id": "a9e6a05abf522fa2",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/c0e47f162a2edbe90532969ddf75a76e4718848d",
+      "title": "chore(badge): update Last Updated badge to Oct 29, 2026 11:33 AM PKT … (+10 more)",
+      "sources": [
+        "claude-code-best-practice"
+      ],
+      "tier": 3,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "a9e6a05abf522fa2",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "Automated commit log from a Claude Code best-practices repo noting a new /design command and badge bumps.",
+        "whyItMatters": "Routine repo maintenance noise; the only possibly useful bit is an unverified /design command mention.",
+        "confidence": "low"
+      },
+      "final": 1.8
+    },
+    {
+      "id": "94430ceaa839cbc6",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 478,
+        "comments": 190
+      },
+      "verdict": "must",
+      "score": {
+        "id": "94430ceaa839cbc6",
+        "relevance": 3,
+        "novelty": 3,
+        "actionability": 3,
+        "evidence": 3,
+        "hypeFlags": [],
+        "category": "incident",
+        "summary": "Claude Code sends every background agent's transcript to its model every 30s for status summaries; a Bun preload disables it.",
+        "whyItMatters": "Measured via OpenTelemetry at roughly 16-26% of spend, with a concrete preload fix and verification steps for daily Claude Code use.",
+        "tryThis": "Add --preload no-agent-summary.js to BUN_OPTIONS, restart daemon, verify log shows preload active.",
+        "confidence": "high"
+      },
+      "final": 10
+    },
+    {
+      "id": "5e9e44475572a259",
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+      "title": "GitHub Octoverse 2026",
+      "sources": [
+        "simon-willison-coding-agents"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "skim",
+      "score": {
+        "id": "5e9e44475572a259",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 0,
+        "evidence": 2,
+        "hypeFlags": [],
+        "category": "research",
+        "summary": "GitHub Octoverse 2026 reports merged PRs tripled to 220M/month and commits to 7.38B/month, with methodology notes.",
+        "whyItMatters": "Ecosystem-scale data on agentic engineering volume; useful context for multi-repo work, not a technique.",
+        "confidence": "high"
+      },
+      "final": 6
+    }
+  ]
+}

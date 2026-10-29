@@ -30,6 +30,7 @@
     "https://www.anthropic.com/news/public-benefit-fund",
     "https://www.anthropic.com/news/s1-sec",
     "https://www.anthropic.com/news/features",
+    "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
     "https://www.anthropic.com/news/expanding-partnership-gsa",
     "https://www.anthropic.com/news/partnerships",
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
@@ -54,6 +55,7 @@
   ],
   "claude-blog": [
     "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+    "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
     "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
     "https://claude.com/resources/articles/code-review-is-now-generally-available",
     "https://claude.com/resources/articles/dashboards-and-motion",
