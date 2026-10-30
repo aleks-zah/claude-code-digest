@@ -1,0 +1,255 @@
+{
+  "date": "2026-10-30",
+  "startedAt": "2026-10-30T13:38:21.720Z",
+  "sinceHours": 36,
+  "counts": {
+    "fresh": 9,
+    "candidates": 9,
+    "kept": 5,
+    "low-score": 4
+  },
+  "tokens": 21261,
+  "failedSources": [],
+  "items": [
+    {
+      "id": "44864eac16c38e56",
+      "url": "https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/",
+      "title": "[AINews] Building AIE CODE: The top Coding Agent Conference",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "44864eac16c38e56",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "opinion",
+        "summary": "Latent Space AINews newsletter mostly promotes an AIE CODE conference, plus vendor-claimed Mistral Large 4 open-weights benchmark numbers.",
+        "whyItMatters": "Mostly conference promotion and vendor-reported model scores; little about Claude Code or agent workflows the reader can apply.",
+        "confidence": "medium"
+      },
+      "final": 2
+    },
+    {
+      "id": "35c84e950b280566",
+      "url": "https://latent.space/p/elorian/",
+      "title": "Can Frontier Models See Past a Decoy? Elorian Tests Visual Reasoning",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "35c84e950b280566",
+        "relevance": 0,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "research",
+        "summary": "Elorian's Glimpse visual reasoning model and DecoyCount benchmark, with company-run internal test scores and funding details.",
+        "whyItMatters": "Generic vision-model news unrelated to Claude Code or agentic coding practice in the reader's stack.",
+        "confidence": "medium"
+      },
+      "final": 1
+    },
+    {
+      "id": "6300099f83ab9ce2",
+      "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
+      "title": "Anthropic hacked to deliver remote access trojan",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 290,
+        "comments": 55
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "6300099f83ab9ce2",
+        "relevance": 2,
+        "novelty": 1,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [
+          "engagement_bait"
+        ],
+        "category": "incident",
+        "summary": "HN post with a sensational title about the same malicious Claude Code extension build; comments say it was a Cursor marketplace copy, not Anthropic's infrastructure.",
+        "whyItMatters": "Duplicates the extension compromise story; the headline overstates it, so the primary report is more useful.",
+        "confidence": "low"
+      },
+      "final": 2.8
+    },
+    {
+      "id": "f2e06cc8d8d5ab11",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/e83196ca588525832627e016881a440f876431d1",
+      "title": "docs(subagents): update Last Updated badge to Oct 30, 2026 v2.1.314 (+10 more)",
+      "sources": [
+        "claude-code-best-practice"
+      ],
+      "tier": 3,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "f2e06cc8d8d5ab11",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "Automated commit log from a best-practice repo syncing docs to Claude Code v2.1.314, noting an added /restart command and routine drift checks.",
+        "whyItMatters": "Mostly badge and changelog churn; the /restart mention is the only item worth a glance.",
+        "confidence": "medium"
+      },
+      "final": 2.5
+    },
+    {
+      "id": "fbfedaa618aab83d",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
+      "title": "v2.1.314",
+      "sources": [
+        "claude-code-releases"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "must",
+      "score": {
+        "id": "fbfedaa618aab83d",
+        "relevance": 3,
+        "novelty": 3,
+        "actionability": 3,
+        "evidence": 3,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Claude Code v2.1.314 adds permissions.blockWritesOutsideWorkingDirectories, idle compaction in VS Code and Desktop, and a fix making claude -p exit 1 on startup failure.",
+        "whyItMatters": "The new write-blocking setting and headless exit-code fix directly affect hardening and scripted claude -p pipelines across multi-repo setups.",
+        "tryThis": "Set permissions.blockWritesOutsideWorkingDirectories in settings.json and verify Write/Edit refuse an out-of-repo path.",
+        "confidence": "high"
+      },
+      "final": 10
+    },
+    {
+      "id": "6edd96eae3e66dcb",
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "title": "Official Claude Code extension compromise",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 34,
+        "comments": 5
+      },
+      "verdict": "must",
+      "score": {
+        "id": "6edd96eae3e66dcb",
+        "relevance": 3,
+        "novelty": 2,
+        "actionability": 3,
+        "evidence": 3,
+        "hypeFlags": [],
+        "category": "incident",
+        "summary": "Phorion's technical postmortem of a backdoored Claude Code VS Code 2.1.313 bundle on the Cursor marketplace, including an SSH key persistence chain and macOS setup bug.",
+        "whyItMatters": "Gives concrete indicators (svc-telemetry key, authorized_keys) to check on machines that installed the affected extension.",
+        "tryThis": "grep authorized_keys for svc-telemetry and list installed Claude Code extension versions for 2.1.313.",
+        "confidence": "high"
+      },
+      "final": 9.2
+    },
+    {
+      "id": "e65fcafff408f808",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "sources": [
+        "simon-willison-coding-agents"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "skim",
+      "score": {
+        "id": "e65fcafff408f808",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Simon Willison summarizes a company's account of running a game world developed by autonomous agents shipping to production hourly, with self-reported token spend.",
+        "whyItMatters": "Shows autonomous deploy-and-rollback loops with agents, but cost and autonomy claims are self-reported and anecdotal.",
+        "confidence": "medium"
+      },
+      "final": 6.2
+    },
+    {
+      "id": "f61d3e32ca006400",
+      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+      "title": "Backdoors in official Claude Code extensions",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 464,
+        "comments": 136
+      },
+      "verdict": "skim",
+      "score": {
+        "id": "f61d3e32ca006400",
+        "relevance": 3,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "incident",
+        "summary": "HN thread on a backdoored Claude Code VS Code extension distributed through the Cursor marketplace, with commenters debating scope and attribution.",
+        "whyItMatters": "Supply-chain compromise of a Claude Code extension; reader should check whether a affected build is installed.",
+        "confidence": "low"
+      },
+      "final": 6.2
+    },
+    {
+      "id": "2ed80828502bb32e",
+      "url": "https://news.ycombinator.com/item?id=50286306",
+      "title": "Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 31,
+        "comments": 3
+      },
+      "verdict": "skim",
+      "score": {
+        "id": "2ed80828502bb32e",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "incident",
+        "summary": "Users report Claude Code put their email into prompts and the model shared it with websites; a linked GitHub issue documents the prompt behavior.",
+        "whyItMatters": "Relevant to privacy controls for agent context, though the evidence is anecdotal and no config fix is given.",
+        "confidence": "medium"
+      },
+      "final": 5.2
+    }
+  ]
+}
