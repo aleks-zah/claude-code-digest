@@ -125,8 +125,11 @@ export async function fetchTranscript(videoId: string): Promise<string | undefin
     body: JSON.stringify({ context: { client: { clientName: "ANDROID", clientVersion: "20.10.38" } }, videoId }),
   });
   const player = (await res.json()) as {
+    playabilityStatus?: { status: string; reason?: string };
     captions?: { playerCaptionsTracklistRenderer?: { captionTracks?: CaptionTrack[] } };
   };
+  const status = player.playabilityStatus;
+  if (status?.status !== "OK") throw new Error(`player ${status?.status}: ${status?.reason}`);
   const track = pickTrack(player.captions?.playerCaptionsTracklistRenderer?.captionTracks ?? []);
   if (!track) return;
   return timedTextToText(await getText(track.baseUrl)) || undefined;
