@@ -53,7 +53,15 @@ export class State {
   }
 
   /** Called only after the digest was delivered, so a failed send never marks items as seen. */
-  save(opts: { seenIds: string[]; results: SourceResult[]; run: RunRecord; today: string; retentionDays: number }): void {
+  /** `runId` names the run file and must sort after `today` itself, e.g. `2026-10-25T10-44-33`. */
+  save(opts: {
+    seenIds: string[];
+    results: SourceResult[];
+    run: RunRecord;
+    runId: string;
+    today: string;
+    retentionDays: number;
+  }): void {
     const cutoff = new Date(Date.parse(opts.today) - opts.retentionDays * 86400_000).toISOString().slice(0, 10);
     const seen = Object.fromEntries(Object.entries(this.loadSeen()).filter(([, d]) => d >= cutoff));
     for (const id of opts.seenIds) seen[id] ??= opts.today;
@@ -63,7 +71,7 @@ export class State {
     for (const r of opts.results) if (r.linkSet && !r.error) linkSets[r.sourceId] = r.linkSet;
     this.write("link-sets.json", linkSets);
 
-    this.write(`runs/${opts.today}.json`, opts.run);
+    this.write(`runs/${opts.runId}.json`, opts.run);
   }
 }
 

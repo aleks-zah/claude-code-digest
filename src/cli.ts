@@ -64,7 +64,8 @@ async function main(): Promise<void> {
   });
   for (const r of failedSources) log("collect.source_failed", { source: r.sourceId, error: r.error });
 
-  const today = new Intl.DateTimeFormat("en-CA", { timeZone: config.timezone }).format(now);
+  const stamp = new Intl.DateTimeFormat("sv-SE", { timeZone: config.timezone, dateStyle: "short", timeStyle: "medium" }).format(now);
+  const today = stamp.slice(0, 10);
   const streaks = failureStreaks(
     failedSources.map((r) => r.sourceId),
     state.loadRunsBefore(today, 30),
@@ -157,8 +158,9 @@ async function main(): Promise<void> {
       ...outcome,
     })),
   };
-  state.save({ seenIds: fresh.flatMap((i) => i.seenIds), results, run, today, retentionDays: config.seenRetentionDays });
-  log("state", { seen: fresh.length, run: `runs/${today}.json` });
+  const runId = stamp.replace(" ", "T").replaceAll(":", "-");
+  state.save({ seenIds: fresh.flatMap((i) => i.seenIds), results, run, runId, today, retentionDays: config.seenRetentionDays });
+  log("state", { seen: fresh.length, run: `runs/${runId}.json` });
 }
 
 try {

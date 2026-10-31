@@ -19,19 +19,34 @@ test("state: a second run sees everything the first one saved; old entries are p
       { sourceId: "broken", entries: [], linkSet: [], error: "HTTP 500" },
     ],
     run,
+    runId: "2026-08-01T06-48-00",
     today: "2026-08-01",
     retentionDays: 45,
   });
-  state.save({ seenIds: ["b", "c"], results: [], run, today: "2026-10-24", retentionDays: 45 });
+  state.save({ seenIds: ["b", "c"], results: [], run, runId: "2026-10-24T06-48-00", today: "2026-10-24", retentionDays: 45 });
 
   assert.deepEqual(state.loadSeen(), { b: "2026-10-24", c: "2026-10-24" });
   assert.deepEqual(state.loadLinkSets(), { news: ["https://n.test/1"] });
-  assert.equal(JSON.parse(readFileSync(join(state.dir, "runs/2026-10-24.json"), "utf8")).date, "2026-10-24");
+  assert.equal(JSON.parse(readFileSync(join(state.dir, "runs/2026-10-24T06-48-00.json"), "utf8")).date, "2026-10-24");
 
-  state.save({ seenIds: ["d"], results: [], run, today: "2026-10-25", retentionDays: 45 });
+  state.save({ seenIds: ["d"], results: [], run, runId: "2026-10-25T06-48-00", today: "2026-10-25", retentionDays: 45 });
   const again = [item({ url: "c", id: "c" }), item({ url: "d", id: "d" }), item({ url: "e", id: "e" })];
   assert.deepEqual(dropSeen(again, state.loadSeen()).map((i) => i.id), ["e"]);
   assert.equal(state.loadSeen().c, "2026-10-24");
+});
+
+test("state: a same-day rerun keeps the earlier run's record", () => {
+  const state = new State(mkdtempSync(join(tmpdir(), "digest-")));
+  const save = (runId: string, tokens: number) =>
+    state.save({ seenIds: [], results: [], run: { ...run, tokens }, runId, today: "2026-10-24", retentionDays: 45 });
+  save("2026-10-24T06-48-00", 10826);
+  save("2026-10-24T10-44-33", 0);
+
+  const tokens = (runId: string) => JSON.parse(readFileSync(join(state.dir, `runs/${runId}.json`), "utf8")).tokens;
+  assert.equal(tokens("2026-10-24T06-48-00"), 10826);
+  assert.equal(tokens("2026-10-24T10-44-33"), 0);
+  assert.equal(state.loadRunsBefore("2026-10-25", 10).length, 2);
+  assert.deepEqual(state.loadRunsBefore("2026-10-24", 10), []);
 });
 
 function fakeFetch(responses: { status: number; body: object }[]) {
@@ -75,6 +90,7 @@ test("failure streaks count consecutive delivered runs before today, plus today"
       seenIds: [],
       results: [],
       run: { ...run, date, failedSources: ids.map((id) => ({ id, error: "HTTP 403" })) },
+      runId: `${date}T06-48-00`,
       today: date,
       retentionDays: 45,
     });

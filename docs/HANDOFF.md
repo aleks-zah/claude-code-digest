@@ -185,7 +185,7 @@ Host it on GitHub Actions in a private repo: free at this volume, no server, and
 **State**
 
 - `state/seen.json`: canonical URL hash to first-seen date, pruned after 45 days.
-- `state/runs/YYYY-MM-DD.json`: every candidate with its sub-scores, flags and verdict. This is the audit trail for tuning the filter.
+- `state/runs/YYYY-MM-DDTHH-MM-SS.json` (one per run, local time): every candidate with its sub-scores, flags and verdict. This is the audit trail for tuning the filter.
 - The workflow commits `state/` back with a `[skip ci]` message, only after a successful send. Regular commits also keep the scheduled workflow from being auto-disabled for inactivity.
 
 **Secrets** (repository secrets, never in config)
