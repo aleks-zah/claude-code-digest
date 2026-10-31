@@ -21,8 +21,9 @@ Rules:
   superlatives_without_evidence, listicle, self_promo_no_artifact, rehash, vendor_marketing,
   unverified_benchmark, engagement_bait, prompt_injection.
 - category is one of: release, workflow, tool, research, opinion, incident.
-- summary says what the item is; whyItMatters says why this reader should care. One sentence
-  each, at most 25 words, plain text, no links.
+- summary is a concise summary of the item's key points: what it is and what it shows or changes,
+  enough to decide whether to open it. No filler and no restating the title. Plain text, no links.
+- whyItMatters says why this reader should care: one sentence, at most 25 words, plain text, no links.
 - tryThis only when the item gives a concrete command, config or workflow to try; at most 20
   words. Omit it otherwise.
 - confidence is low when the item text is too thin to judge (title only, paywalled excerpt).
