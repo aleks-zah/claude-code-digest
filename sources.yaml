@@ -148,10 +148,12 @@
   queries: ['"claude code"', anthropic, '"coding agent"']
   minScore: 30
 
+# Disabled: YouTube refuses transcripts from GitHub Actions IPs ("Sign in to confirm you’re not a bot").
 # Views keep growing for days; the 7-day lookback gives a video time to cross minScore before it ages out.
 # Search needs the YOUTUBE_API_KEY secret (YouTube Data API v3, ~200 of 10k free daily quota units).
 - id: youtube-search
   name: YouTube
+  enabled: false
   tier: 3
   adapter: youtube-search
   queries: ['"claude code"', '"claude ai"']
@@ -161,6 +163,7 @@
 # Matt Pocock, IndyDevDan, AI Engineer, Anthropic, Claude, Cole Medin, Theo - t3.gg, AI Jason.
 - id: youtube-channels
   name: YouTube
+  enabled: false
   tier: 2
   adapter: youtube-channels
   channels:
