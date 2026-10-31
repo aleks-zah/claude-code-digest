@@ -81,7 +81,7 @@ async function main(): Promise<void> {
   log("prefilter", { in: fresh.length, out: pre.candidates.length, dropped: pre.dropped.length });
 
   t = Date.now();
-  const candidates = await enrich(pre.candidates, config.enrich.maxChars, config.enrich.topComments);
+  const candidates = await enrich(pre.candidates, config.enrich);
   log("enrich", { ms: Date.now() - t, withText: candidates.filter((c) => c.text).length, out: candidates.length });
 
   let triaged: TriageResult | undefined;

@@ -10,6 +10,8 @@ fetch:
 
 enrich:
   maxChars: 6000
+  # About 25 minutes of speech.
+  transcriptMaxChars: 20000
   topComments: 3
 
 triage:

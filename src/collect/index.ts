@@ -6,6 +6,7 @@ import { collectHn } from "./hn.ts";
 import { collectHtmlIndex } from "./htmlIndex.ts";
 import { collectReadmeLinks } from "./readmeLinks.ts";
 import { collectReddit } from "./reddit.ts";
+import { collectYoutubeChannels, collectYoutubeSearch } from "./youtube.ts";
 
 export interface CollectContext {
   since: Date;
@@ -14,17 +15,24 @@ export interface CollectContext {
 }
 
 async function collectOne(s: Source, ctx: CollectContext): Promise<{ entries: RawEntry[]; linkSet?: string[] }> {
+  const since = s.lookbackHours
+    ? new Date(Math.min(ctx.since.getTime(), Date.now() - s.lookbackHours * 3600_000))
+    : ctx.since;
   switch (s.adapter) {
     case "feed":
-      return { entries: await collectFeed(s.url, ctx.since) };
+      return { entries: await collectFeed(s.url, since) };
     case "html-index":
       return collectHtmlIndex(s.url, s.linkPattern, ctx.linkSets[s.id]);
     case "readme-links":
       return collectReadmeLinks(s.url, ctx.linkSets[s.id]);
     case "reddit":
-      return { entries: await collectReddit(s.subreddit, ctx.since) };
+      return { entries: await collectReddit(s.subreddit, since) };
     case "hn":
-      return { entries: await collectHn(s.queries, s.minScore ?? 0, ctx.since) };
+      return { entries: await collectHn(s.queries, s.minScore ?? 0, since) };
+    case "youtube-search":
+      return { entries: await collectYoutubeSearch(s.queries, s.minScore ?? 0, since) };
+    case "youtube-channels":
+      return { entries: await collectYoutubeChannels(s.channels, s.minScore ?? 0, since) };
   }
 }
 

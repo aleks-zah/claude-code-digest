@@ -2,6 +2,8 @@ import { Readability } from "@mozilla/readability";
 import { parseHTML } from "linkedom";
 import { topHnComments } from "./collect/hn.ts";
 import { topRedditComments } from "./collect/reddit.ts";
+import { fetchTranscript, youtubeVideoId } from "./collect/youtube.ts";
+import type { Config } from "./config.ts";
 import { getScraped } from "./http.ts";
 import { log } from "./log.ts";
 import { collapse, truncate } from "./text.ts";
@@ -16,9 +18,18 @@ export function extractArticle(html: string): { title?: string; text: string } |
   return { title: article.title ? collapse(article.title) : undefined, text: collapse(article.textContent) };
 }
 
-async function enrichOne(item: Item, maxChars: number, topComments: number): Promise<Item> {
+async function enrichOne(item: Item, { maxChars, transcriptMaxChars, topComments }: Config["enrich"]): Promise<Item> {
   const out = { ...item };
-  if (!out.text && !DISCUSSION_HOST.test(new URL(out.url).hostname)) {
+  const videoId = youtubeVideoId(out.url);
+  if (!out.text && videoId) {
+    try {
+      const transcript = await fetchTranscript(videoId);
+      if (transcript) out.text = truncate(transcript, transcriptMaxChars);
+      else log("enrich.no_transcript", { url: out.url });
+    } catch (err) {
+      log("enrich.transcript_failed", { url: out.url, error: String(err) });
+    }
+  } else if (!out.text && !DISCUSSION_HOST.test(new URL(out.url).hostname)) {
     try {
       const article = extractArticle(await getScraped(out.url));
       if (article) {
@@ -42,13 +53,13 @@ async function enrichOne(item: Item, maxChars: number, topComments: number): Pro
   return out;
 }
 
-export async function enrich(items: Item[], maxChars: number, topComments: number, concurrency = 6): Promise<Item[]> {
+export async function enrich(items: Item[], opts: Config["enrich"], concurrency = 6): Promise<Item[]> {
   const out: Item[] = new Array(items.length);
   let next = 0;
   const worker = async () => {
     while (next < items.length) {
       const i = next++;
-      out[i] = await enrichOne(items[i], maxChars, topComments);
+      out[i] = await enrichOne(items[i], opts);
     }
   };
   await Promise.all(Array.from({ length: concurrency }, worker));

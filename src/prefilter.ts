@@ -16,10 +16,13 @@ export function prefilter(items: Item[], sources: Map<string, Source>, config: C
     else kept.push(item);
   }
 
+  // Relative to each source's floor, so YouTube views don't outrank every HN or Reddit score.
+  const engagement = (i: Item) =>
+    Math.max(...i.sources.map((id) => (i.engagement.points ?? 0) / Math.max(sources.get(id)!.minScore ?? 1, 1)));
   const ranked = kept.toSorted(
     (a, b) =>
       a.tier - b.tier ||
-      (b.engagement.points ?? 0) - (a.engagement.points ?? 0) ||
+      engagement(b) - engagement(a) ||
       b.publishedAt.localeCompare(a.publishedAt),
   );
   for (const item of ranked.slice(config.candidateCap)) dropped.push({ item, reason: "over-cap" });

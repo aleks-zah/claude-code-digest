@@ -37,3 +37,16 @@ test("cap keeps the highest tier, then engagement", () => {
   assert.equal(candidates[1].url, "r44");
   assert.equal(dropped.filter((d) => d.reason === "over-cap").length, 6);
 });
+
+test("prefilter: ranks engagement relative to each source's floor", () => {
+  const sources = sourceMap({ id: "reddit", tier: 3, minScore: 50 }, { id: "youtube", tier: 3, minScore: 3000 });
+  const { candidates } = prefilter(
+    [
+      item({ url: "video", sources: ["youtube"], tier: 3, engagement: { points: 4000 } }),
+      item({ url: "post", sources: ["reddit"], tier: 3, engagement: { points: 200 } }),
+    ],
+    sources,
+    config,
+  );
+  assert.deepEqual(candidates.map((c) => c.url), ["post", "video"]);
+});

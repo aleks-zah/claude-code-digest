@@ -9,7 +9,11 @@ const ConfigSchema = z.object({
   maxItems: z.number().int().positive(),
   candidateCap: z.number().int().positive(),
   fetch: z.object({ timeoutMs: z.number().int().positive(), retries: z.number().int().min(0) }),
-  enrich: z.object({ maxChars: z.number().int().positive(), topComments: z.number().int().min(0) }),
+  enrich: z.object({
+    maxChars: z.number().int().positive(),
+    transcriptMaxChars: z.number().int().positive(),
+    topComments: z.number().int().min(0),
+  }),
   triage: z.object({
     model: z.string(),
     batchSize: z.number().int().positive(),
@@ -26,6 +30,8 @@ const SourceBase = z.object({
   enabled: z.boolean().default(true),
   minScore: z.number().int().min(0).optional(),
   maxItemsPerRun: z.number().int().positive().optional(),
+  /** Overrides the run's lookback when longer. */
+  lookbackHours: z.number().positive().optional(),
 });
 
 const SourceSchema = z.discriminatedUnion("adapter", [
@@ -42,6 +48,8 @@ const SourceSchema = z.discriminatedUnion("adapter", [
   SourceBase.extend({ adapter: z.literal("readme-links"), url: z.url() }),
   SourceBase.extend({ adapter: z.literal("reddit"), subreddit: z.string() }),
   SourceBase.extend({ adapter: z.literal("hn"), queries: z.array(z.string()).min(1) }),
+  SourceBase.extend({ adapter: z.literal("youtube-search"), queries: z.array(z.string()).min(1) }),
+  SourceBase.extend({ adapter: z.literal("youtube-channels"), channels: z.array(z.string().regex(/^UC[\w-]{22}$/)).min(1) }),
 ]);
 
 const SourcesSchema = z

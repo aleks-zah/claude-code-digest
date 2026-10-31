@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCswG6FSbgZjbWtdf_hMLaow"/>
+ <id>yt:channel:swG6FSbgZjbWtdf_hMLaow</id>
+ <yt:channelId>swG6FSbgZjbWtdf_hMLaow</yt:channelId>
+ <title>Matt Pocock</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UCswG6FSbgZjbWtdf_hMLaow"/>
+ <author>
+  <name>Matt Pocock</name>
+  <uri>https://www.youtube.com/channel/UCswG6FSbgZjbWtdf_hMLaow</uri>
+ </author>
+ <published>2017-03-14T12:21:09+00:00</published>
+  <entry>
+  <id>yt:video:k2zgcTDq4aQ</id>
+  <yt:videoId>k2zgcTDq4aQ</yt:videoId>
+  <yt:channelId>UCswG6FSbgZjbWtdf_hMLaow</yt:channelId>
+  <title>When should you NOT use /grill-me?</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/k2zgcTDq4aQ"/>
+  <author>
+   <name>Matt Pocock</name>
+   <uri>https://www.youtube.com/channel/UCswG6FSbgZjbWtdf_hMLaow</uri>
+  </author>
+  <published>2026-10-16T12:53:09+00:00</published>
+  <updated>2026-10-20T02:33:58+00:00</updated>
+  <media:group>
+   <media:title>When should you NOT use /grill-me?</media:title>
+   <media:content url="https://www.youtube.com/v/k2zgcTDq4aQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/k2zgcTDq4aQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Learn when to use the /grill-me skill and when to just dive right in. In this video, I break down a decision tree for choosing between one-shotting small changes, using a grilling session for medium work, and leveraging Wayfinder for large-scale projects.
+
+Keep up to date with my skills here:
+
+https://aihero.dev/s/9orynF
+
+Follow Matt on Twitter
+
+https://twitter.com/mattpocockuk
+
+Join the Discord:
+
+https://aihero.dev/s/3H9aVL</media:description>
+   <media:community>
+    <media:starRating count="1015" average="5.00" min="1" max="5"/>
+    <media:statistics views="49275"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Vo33extKAeA</id>
+  <yt:videoId>Vo33extKAeA</yt:videoId>
+  <yt:channelId>UCswG6FSbgZjbWtdf_hMLaow</yt:channelId>
+  <title>Your agent is a tactical tornado</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/Vo33extKAeA"/>
+  <author>
+   <name>Matt Pocock</name>
+   <uri>https://www.youtube.com/channel/UCswG6FSbgZjbWtdf_hMLaow</uri>
+  </author>
+  <published>2026-10-16T12:48:01+00:00</published>
+  <updated>2026-10-20T02:27:53+00:00</updated>
+  <media:group>
+   <media:title>Your agent is a tactical tornado</media:title>
+   <media:content url="https://www.youtube.com/v/Vo33extKAeA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/Vo33extKAeA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Discover why AI agents act like &quot;tactical tornadoes&quot; and how to guide them toward long-term code health. Learn the difference between tactical and strategic programming, and why you need to be the strategist when working with AI agents.
+
+Keep up to date with my skills here:
+
+https://aihero.dev/s/T1AFdD
+
+Follow Matt on Twitter
+
+https://twitter.com/mattpocockuk
+
+Join the Discord:
+
+https://aihero.dev/s/WQZ2RV</media:description>
+   <media:community>
+    <media:starRating count="518" average="5.00" min="1" max="5"/>
+    <media:statistics views="1500"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:r8FYE2ZOj0E</id>
+  <yt:videoId>r8FYE2ZOj0E</yt:videoId>
+  <yt:channelId>UCswG6FSbgZjbWtdf_hMLaow</yt:channelId>
+  <title>The secret to building robust frontend apps with agents</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/r8FYE2ZOj0E"/>
+  <author>
+   <name>Matt Pocock</name>
+   <uri>https://www.youtube.com/channel/UCswG6FSbgZjbWtdf_hMLaow</uri>
+  </author>
+  <published>2026-10-16T10:42:37+00:00</published>
+  <updated>2026-10-20T02:22:08+00:00</updated>
+  <media:group>
+   <media:title>The secret to building robust frontend apps with agents</media:title>
+   <media:content url="https://www.youtube.com/v/r8FYE2ZOj0E?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/r8FYE2ZOj0E/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Learn why reducers are incredible for front-end development. Discover how separating UI logic from state management makes code more robust, testable, and maintainable.
+
+Keep up to date with my skills here:
+
+https://aihero.dev/s/1aIycd
+
+Follow Matt on Twitter
+
+https://twitter.com/mattpocockuk
+
+Join the Discord:
+
+https://aihero.dev/s/EOsQ7j</media:description>
+   <media:community>
+    <media:starRating count="1369" average="5.00" min="1" max="5"/>
+    <media:statistics views="64259"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>
