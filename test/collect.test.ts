@@ -5,7 +5,7 @@ import { parseFeed } from "../src/collect/feed.ts";
 import { parseHits } from "../src/collect/hn.ts";
 import { diffLinks, extractIndexLinks } from "../src/collect/htmlIndex.ts";
 import { extractReadmeLinks } from "../src/collect/readmeLinks.ts";
-import { parseListing } from "../src/collect/reddit.ts";
+import { parsePosts } from "../src/collect/reddit.ts";
 import { collectAll } from "../src/collect/index.ts";
 import { collectFeed } from "../src/collect/feed.ts";
 import type { Source } from "../src/config.ts";
@@ -94,9 +94,8 @@ test("hn: Ask HN posts without a URL point at the thread", () => {
   assert.equal(entry.url, "https://news.ycombinator.com/item?id=1");
 });
 
-// Hand-written: Reddit blocks unauthenticated requests, so there is no recorded response.
-test("reddit: self and media posts use the thread, link posts the target, old posts dropped", () => {
-  const entries = parseListing(JSON.parse(fixture("reddit-top.json")), new Date(1792700000 * 1000));
+test("reddit: self and media posts use the thread, link posts the target, old and unrefreshed posts dropped", () => {
+  const entries = parsePosts(JSON.parse(fixture("reddit-top.json")).data, new Date(1792700000 * 1000));
   assert.deepEqual(
     entries.map((e) => e.url),
     [

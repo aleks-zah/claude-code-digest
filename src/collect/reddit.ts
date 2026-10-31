@@ -2,9 +2,8 @@ import { getJson } from "../http.ts";
 import { collapse, truncate } from "../text.ts";
 import type { RawEntry } from "../types.ts";
 
-interface Listing<T> {
-  data: { children: { kind: string; data: T }[] };
-}
+const API = "https://arctic-shift.photon-reddit.com/api";
+const PAGE = 100;
 
 export interface RedditPost {
   title: string;
@@ -16,36 +15,14 @@ export interface RedditPost {
   score: number;
   num_comments: number;
   created_utc: number;
+  _meta?: { retrieved_2nd_on?: number };
 }
 
-let token: Promise<string> | undefined;
-
-function fetchToken(): Promise<string> {
-  const id = process.env.REDDIT_CLIENT_ID;
-  const secret = process.env.REDDIT_CLIENT_SECRET;
-  if (!id || !secret) return Promise.reject(new Error("REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set"));
-  return getJson<{ access_token: string }>("https://www.reddit.com/api/v1/access_token", {
-    method: "POST",
-    headers: {
-      authorization: `Basic ${Buffer.from(`${id}:${secret}`).toString("base64")}`,
-      "content-type": "application/x-www-form-urlencoded",
-    },
-    body: "grant_type=client_credentials",
-  }).then((r) => r.access_token);
-}
-
-async function redditGet<T>(path: string): Promise<T> {
-  if (!token) {
-    token = fetchToken();
-    token.catch(() => (token = undefined));
-  }
-  return getJson<T>(`https://oauth.reddit.com${path}`, { headers: { authorization: `Bearer ${await token}` } });
-}
-
-export function parseListing(listing: Listing<RedditPost>, since: Date): RawEntry[] {
-  return listing.data.children
-    .map((c) => c.data)
-    .filter((p) => p.created_utc * 1000 >= since.getTime())
+export function parsePosts(posts: RedditPost[], since: Date): RawEntry[] {
+  return posts
+    // Arctic Shift stores the score from post time until a second fetch hours later. Every fresh item is
+    // marked seen, so judging the early score would drop the post for good; the lookback picks it up next run.
+    .filter((p) => p.created_utc * 1000 >= since.getTime() && p._meta?.retrieved_2nd_on)
     .map((p) => {
       const thread = `https://www.reddit.com${p.permalink}`;
       const host = p.is_self ? "" : new URL(p.url, "https://www.reddit.com").hostname;
@@ -64,18 +41,27 @@ export function parseListing(listing: Listing<RedditPost>, since: Date): RawEntr
 }
 
 export async function collectReddit(subreddit: string, since: Date): Promise<RawEntry[]> {
-  const listing = await redditGet<Listing<RedditPost>>(`/r/${subreddit}/top?t=day&limit=25&raw_json=1`);
-  return parseListing(listing, since);
+  const posts: RedditPost[] = [];
+  let cursor = "";
+  for (;;) {
+    const { data } = await getJson<{ data: RedditPost[] }>(
+      `${API}/posts/search?subreddit=${subreddit}&after=${Math.floor(since.getTime() / 1000)}&limit=${PAGE}&sort=desc${cursor}`,
+    );
+    posts.push(...data);
+    if (data.length < PAGE) return parsePosts(posts, since);
+    cursor = `&before=${data.at(-1)!.created_utc}`;
+  }
 }
 
 export async function topRedditComments(threadUrl: string, n: number): Promise<string[]> {
   const id = threadUrl.match(/\/comments\/([a-z0-9]+)/i)?.[1];
   if (!id) return [];
-  const [, comments] = await redditGet<[unknown, Listing<{ body?: string }>]>(
-    `/comments/${id}?sort=top&limit=${n}&depth=1&raw_json=1`,
+  const { data } = await getJson<{ data: { body: string; parent_id: string; score: number }[] }>(
+    `${API}/comments/search?link_id=${id}&limit=100`,
   );
-  return comments.data.children
-    .filter((c) => c.kind === "t1" && c.data.body)
+  return data
+    .filter((c) => c.parent_id.startsWith("t3_"))
+    .sort((a, b) => b.score - a.score)
     .slice(0, n)
-    .map((c) => truncate(collapse(c.data.body!), 800));
+    .map((c) => truncate(collapse(c.body), 800));
 }

@@ -79,8 +79,8 @@ Start with these 18 sources in `sources.yaml`; endpoints marked "verify" are bes
 | Hamel Husain | 2 | rss | `https://hamel.dev` (verify feed) | Evals; low volume. |
 | awesome-claude-code | 3 | github-readme-diff | `hesreallyhim/awesome-claude-code` README on `main` | Diff README daily; each newly added link = one candidate item, not one per commit. |
 | claude-code-best-practice | 3 | github-commits | `https://github.com/shanraisshan/claude-code-best-practice/commits/main.atom` | Treat a day's commits as one item. |
-| r/ClaudeCode | 3 | reddit | `https://www.reddit.com/r/ClaudeCode/top.json?t=day&limit=25` | Score at least 50. Needs a real User-Agent; Reddit may block CI IPs (fallback: `.rss` or OAuth app). |
-| r/ClaudeAI | 3 | reddit | `https://www.reddit.com/r/ClaudeAI/top.json?t=day&limit=25` | Score at least 150 and mentions Claude Code. |
+| r/ClaudeCode | 3 | reddit | `https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=ClaudeCode` | Score at least 30. Arctic Shift archive: Reddit blocks unauthenticated JSON, HTML and RSS, and denied API access. Scores are snapshots from 4 to 10h after posting; posts without the second fetch wait for the next run. |
+| r/ClaudeAI | 3 | reddit | `https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=ClaudeAI` | Score at least 50 and mentions Claude Code. |
 | Hacker News | 3 | hn-algolia | `https://hn.algolia.com/api/v1/search_by_date?query="claude code"&tags=story` | Add `numericFilters=points>40,created_at_i>{since}`. |
 
 **Tiers.** 1 = official: always a candidate, skips the engagement floor, still scored. 2 = trusted practitioner: +1 score bonus. 3 = community: must earn its place on content and engagement.
@@ -261,7 +261,7 @@ One broken source must never block the digest; a broken pipeline must always tel
 - [ ] Delivery time: 07:47 Lisbon (summer) / 06:47 (winter) acceptable?
 - [ ] Max items per digest: 7, or fewer?
 - [ ] Second-pass rerank with the larger model: on or off?
-- [ ] Reddit: unauthenticated JSON, or register an OAuth app now to avoid CI IP blocks?
+- [x] Reddit: Arctic Shift archive API (unauthenticated JSON blocked, API access denied).
 
 ## Sources
 

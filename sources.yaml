@@ -125,23 +125,21 @@
   url: https://github.com/shanraisshan/claude-code-best-practice/commits/main.atom
   collapse: day
 
-# Unauthenticated JSON returns 403 and RSS 429s, so these need REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET.
-# Disabled until Reddit approves the API access request (Responsible Builder Policy).
+# Via the Arctic Shift archive: Reddit 403s unauthenticated JSON and 429s RSS, and denied API access.
+# Archive scores are snapshots from 4 to 10h after posting, hence lower minScore than live top-of-day scores.
 - id: r-claudecode
   name: r/ClaudeCode
   tier: 3
-  enabled: false
   adapter: reddit
   subreddit: ClaudeCode
-  minScore: 50
+  minScore: 30
 
 - id: r-claudeai
   name: r/ClaudeAI
   tier: 3
-  enabled: false
   adapter: reddit
   subreddit: ClaudeAI
-  minScore: 150
+  minScore: 50
 
 - id: hacker-news
   name: HN

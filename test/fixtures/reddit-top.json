@@ -1,60 +1,65 @@
 {
-  "kind": "Listing",
-  "data": {
-    "children": [
-      {
-        "kind": "t3",
-        "data": {
-          "title": "Hooks that block writes outside the repo",
-          "url": "https://www.reddit.com/r/ClaudeCode/comments/1abc23/hooks_that_block_writes/",
-          "permalink": "/r/ClaudeCode/comments/1abc23/hooks_that_block_writes/",
-          "is_self": true,
-          "selftext": "Here is my PreToolUse config & why it works.",
-          "author": "someone",
-          "score": 212,
-          "num_comments": 40,
-          "created_utc": 1792800000
-        }
-      },
-      {
-        "kind": "t3",
-        "data": {
-          "title": "Parallel worktrees writeup",
-          "url": "https://example.com/worktrees?utm_source=reddit",
-          "permalink": "/r/ClaudeCode/comments/1abc24/parallel_worktrees_writeup/",
-          "is_self": false,
-          "author": "other",
-          "score": 75,
-          "num_comments": 12,
-          "created_utc": 1792801000
-        }
-      },
-      {
-        "kind": "t3",
-        "data": {
-          "title": "Look at my statusline",
-          "url": "https://i.redd.it/xyz.png",
-          "permalink": "/r/ClaudeCode/comments/1abc25/look_at_my_statusline/",
-          "is_self": false,
-          "author": "third",
-          "score": 90,
-          "num_comments": 5,
-          "created_utc": 1792802000
-        }
-      },
-      {
-        "kind": "t3",
-        "data": {
-          "title": "Old post",
-          "url": "https://example.com/old",
-          "permalink": "/r/ClaudeCode/comments/1abc20/old_post/",
-          "is_self": false,
-          "author": "fourth",
-          "score": 500,
-          "num_comments": 80,
-          "created_utc": 1792600000
-        }
+  "data": [
+    {
+      "title": "Hooks that block writes outside the repo",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1abc23/hooks_that_block_writes/",
+      "permalink": "/r/ClaudeCode/comments/1abc23/hooks_that_block_writes/",
+      "is_self": true,
+      "selftext": "Here is my PreToolUse config & why it works.",
+      "author": "someone",
+      "score": 212,
+      "num_comments": 40,
+      "created_utc": 1792800000,
+      "_meta": {
+        "retrieved_2nd_on": 1792814400
       }
-    ]
-  }
+    },
+    {
+      "title": "Parallel worktrees writeup",
+      "url": "https://example.com/worktrees?utm_source=reddit",
+      "permalink": "/r/ClaudeCode/comments/1abc24/parallel_worktrees_writeup/",
+      "is_self": false,
+      "author": "other",
+      "score": 75,
+      "num_comments": 12,
+      "created_utc": 1792801000,
+      "_meta": {
+        "retrieved_2nd_on": 1792815400
+      }
+    },
+    {
+      "title": "Look at my statusline",
+      "url": "https://i.redd.it/xyz.png",
+      "permalink": "/r/ClaudeCode/comments/1abc25/look_at_my_statusline/",
+      "is_self": false,
+      "author": "third",
+      "score": 90,
+      "num_comments": 5,
+      "created_utc": 1792802000,
+      "_meta": {
+        "retrieved_2nd_on": 1792816400
+      }
+    },
+    {
+      "title": "Old post",
+      "url": "https://example.com/old",
+      "permalink": "/r/ClaudeCode/comments/1abc20/old_post/",
+      "is_self": false,
+      "author": "fourth",
+      "score": 500,
+      "num_comments": 80,
+      "created_utc": 1792600000
+    },
+    {
+      "title": "Just posted",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1abc26/just_posted/",
+      "permalink": "/r/ClaudeCode/comments/1abc26/just_posted/",
+      "is_self": true,
+      "selftext": "",
+      "author": "fourth",
+      "score": 1,
+      "num_comments": 0,
+      "created_utc": 1792803000
+    }
+  ]
 }
