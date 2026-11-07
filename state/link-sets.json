@@ -3,6 +3,7 @@
     "https://www.anthropic.com/research/redesigning-source-control",
     "https://www.anthropic.com/research/harness-design-long-running-apps",
     "https://www.anthropic.com/research/AI-resistant-technical-evaluations",
+    "https://www.anthropic.com/research/components-of-agent-memory",
     "https://www.anthropic.com/research/how-we-contain-claude",
     "https://www.anthropic.com/research/april-23-postmortem",
     "https://www.anthropic.com/research/managed-agents",
@@ -22,8 +23,7 @@
     "https://www.anthropic.com/research/desktop-extensions",
     "https://www.anthropic.com/research/confidential-inference-trusted-vms",
     "https://www.anthropic.com/research/multi-agent-research-system",
-    "https://www.anthropic.com/research/claude-code-best-practices",
-    "https://www.anthropic.com/research/claude-think-tool"
+    "https://www.anthropic.com/research/claude-code-best-practices"
   ],
   "anthropic-news": [
     "https://www.anthropic.com/news/announcements",
