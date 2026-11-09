@@ -1,9 +1,9 @@
 {
   "anthropic-engineering": [
+    "https://www.anthropic.com/research/components-of-agent-memory",
     "https://www.anthropic.com/research/redesigning-source-control",
     "https://www.anthropic.com/research/harness-design-long-running-apps",
     "https://www.anthropic.com/research/AI-resistant-technical-evaluations",
-    "https://www.anthropic.com/research/components-of-agent-memory",
     "https://www.anthropic.com/research/how-we-contain-claude",
     "https://www.anthropic.com/research/april-23-postmortem",
     "https://www.anthropic.com/research/managed-agents",
