@@ -54,13 +54,13 @@
     "https://www.anthropic.com/news/accenture-embedded-evaluation"
   ],
   "claude-blog": [
-    "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+    "https://claude.com/resources/articles/sheets-whiteboards-data",
+    "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude",
     "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
     "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
     "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
     "https://claude.com/resources/articles/code-review-is-now-generally-available",
-    "https://claude.com/resources/articles/dashboards-and-motion",
-    "https://claude.com/resources/articles/claude-code-mods"
+    "https://claude.com/resources/articles/dashboards-and-motion"
   ],
   "humanlayer": [
     "https://www.humanlayer.dev/blog/humanlayer-joins-factory",
