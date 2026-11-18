@@ -1,0 +1,5344 @@
+{
+  "date": "2026-11-18",
+  "startedAt": "2026-11-18T15:59:09.194Z",
+  "sinceHours": 36,
+  "counts": {
+    "fresh": 334,
+    "candidates": 24,
+    "kept": 3,
+    "low-engagement": 310,
+    "low-score": 21
+  },
+  "tokens": 39458,
+  "failedSources": [
+    {
+      "id": "r-claudecode",
+      "error": "HTTP 422 for https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=ClaudeCode&after=1794887949&limit=100&sort=desc"
+    }
+  ],
+  "items": [
+    {
+      "id": "eebf9433170ef4b2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzf31w/weekly_limit_did_not_reset_after_resubscribing/",
+      "title": "Weekly limit did not reset after resubscribing",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1224d7c0fa4ff12c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzf0lw/psa_fake_new_signin_detected_on_your_claude/",
+      "title": "PSA: Fake “New sign-in detected on your Claude account” email going around",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 7,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f3dbdde959611d87",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzesjg/i_built_a_status_pad_for_my_claude_code_sessions/",
+      "title": "I built a status pad for my Claude Code sessions so I can see which one is waiting without switching windows",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1edf5e2ca62766f9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzer4k/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0fc3746a7797fea3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzejek/wow_what_how_are_53316_github_contributions_in_a/",
+      "title": "wow! What? How are 53,316 GitHub contributions in a year possible?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3359530d11563ff0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzefg7/i_built_concerto_with_claude_code_it_splits_a/",
+      "title": "I built Concerto with Claude Code: it splits a coding request into stories and gives each one to the model that fits it, with Claude reviewing the work",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6ddea6878aa0baff",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzed1l/is_anyone_using_claude_for_proper_writing/",
+      "title": "Is anyone using Claude for proper writing?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 11
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "81665e5d9b361abf",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzea3w/looking_for_claude_kyc_assistance_payment_via/",
+      "title": "Looking for Claude KYC Assistance — Payment via PayPal / Crypto / Wise",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "31239d6f8774d10a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xze320/free_and_open_source_calibre_styled_app_for_your/",
+      "title": "Free and open source Calibre styled app for your kobo on Android made with Opus and Fable",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c702bbe102139d71",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xze29s/fable_52_is_insane_at_web_development_it/",
+      "title": "Fable 5.2 is insane at web development. It one-shotted this website for my open-source project after working on its own for about 24 hours ($143.94 in API costs)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9fc4d99947703c64",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xze1xs/i_built_a_claude_connector_that_answers_starbucks/",
+      "title": "I built a Claude connector that answers \"Starbucks or Alsea?\" for CRM parent accounts. How we built it with Claude Code and what we learned.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "68aab87d03cc2729",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzds8c/i_kept_losing_track_of_which_ai_was_doing_what/",
+      "title": "I kept losing track of which AI was doing what (and what it cost me), so I built a hub where they hand jobs to each other",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "00265cf993ec974a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzdmqk/experimenting_with_external_coding_model/",
+      "title": "Experimenting with external coding model providers in Claude Code",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e729fbc5c4c1fbc2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzdkcg/would_you_put_starbucks_chile_under_starbucks_or/",
+      "title": "Would you put Starbucks Chile under Starbucks or Alsea in your CRM? We built a Claude connector for this",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a2a13755e342972e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzdb68/mythos_52_vs_fable_52/",
+      "title": "Mythos 5.2 vs Fable 5.2",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 6,
+        "comments": 15
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b46cfce88fe33fce",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzd9ys/my_claude_code_setup_opensourced_with_the_reason/",
+      "title": "my Claude Code setup, open-sourced, with the reason behind every rule",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1778a9bd6f21cf0b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzd8ul/i_built_a_game_where_you_call_people_pretending/",
+      "title": "I built a game where you call people pretending to be scammers to extract their info.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "55be886ba49d871c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzd71v/best_practice_when_cache_expired/",
+      "title": "Best practice when cache expired",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "03477b9edf335736",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzd41t/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e0c733caf1ecca6d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzd0ln/i_made_a_free_claude_skill_that_finds_what_users/",
+      "title": "I made a free Claude skill that finds what users hate about any app. Here’s what it found for Duolingo",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "88b8be2c3161fc9c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcver/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "018e549ea2d9a8dd",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcvad/reimagining_how_we_interact_with_claude_code/",
+      "title": "Reimagining how we interact with Claude Code",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "40c49826201be54c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcuu0/i_gave_claude_nine_database_connections_my_cto/",
+      "title": "I gave Claude nine database connections. My CTO had one more question.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5cffb9af827a61d7",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcpnk/how_do_you_split_frontend_work_across_claude_code/",
+      "title": "How do you split frontend work across Claude Code sessions when they share components?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0083ac4e58eea82f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcoby/claude_haiku_55_vs_deepseek_v41_flash/",
+      "title": "Claude Haiku 5.5 vs DeepSeek V4.1 Flash",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 4,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0694c2affc55838c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzco92/can_we_take_a_moment_to_appreciate_the_claude/",
+      "title": "Can we take a moment to appreciate the Claude bot/mod?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ad44f498d5740b6e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzclz0/built_with_claude_code_a_cli_that_lets_claude_use/",
+      "title": "Built with Claude Code: a CLI that lets Claude use sites with no API (YC directory, Spotify charts, Substack)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b3608f99cb17f968",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzclmt/created_a_tool_for_refining_ai_written_text_with/",
+      "title": "Created a tool for refining AI written text with a better workflow",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 0
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "7ce519eb8f3b98fd",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcj2e/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "738ac55d63ea0aea",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcixm/hello_everyone_can_anyone_tell_me_how_can_i_get/",
+      "title": "hello everyone can anyone tell me how can i get good at using claude with all pugins and all any yt video recommendation to learn it",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d9ca7f4b6c20e3f2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcdyt/asked_claude_to_represent_itself_in_the_workflow/",
+      "title": "Asked Claude to represent itself in the workflow by generating an image.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "24c3f206c292c123",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzc8vf/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d99634d394ca04f3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzc4p8/i_built_a_tool_that_measures_why_ai_writing_feels/",
+      "title": "I built a tool that measures why AI writing feels fake (and it's not the banned words you think)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2549ef239017e41a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzc0x7/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c281c393b2d61efd",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbx9o/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9eddf5c5d2daa7a2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbw6v/i_built_a_game_where_you_call_people_pretending/",
+      "title": "I built a game where you call people pretending to be scammers to extract their info.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8c2a2ed06aa1cca0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbvku/logast_i_created_a_tool_which_can_fix_missing_or/",
+      "title": "Logast: I created a tool which can fix missing or bad logging in your app",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ddc5d582cf7c2ec5",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbpd2/we_built_google_for_gta_memes_with_help_from/",
+      "title": "We built Google for GTA memes with help from Claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "981b2bc6fd8a0fdf",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbmau/i_run_a_companydata_service_as_one_person_plus_a/",
+      "title": "I run a company-data service as one person plus a few Claude Code sessions with separate jobs",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5dbbe2edeafe448a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbktd/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a4a96a88abae7cb8",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbk1r/what_do_you_give_claude_code_when_a_ui_bug_needs/",
+      "title": "What do you give Claude Code when a UI bug needs several clicks to reproduce?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "51272bb1b5567cc9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbhi8/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "735dc71933bec677",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzbe5f/i_built_an_app_store_for_claude_code_19000_mcp/",
+      "title": "I built an \"App Store\" for Claude Code: 19,000+ MCP servers, skills and plugins, one-click install",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cc73ce3828b9238b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzb90o/connecting_to_a_second_gmail_account/",
+      "title": "Connecting to a second Gmail account",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cfdbb8601c1eae4e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzb7c1/how_do_you_keep_track_of_which_claude_code/",
+      "title": "How do you keep track of which Claude Code session is waiting on you? I’m building something for it",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 11
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8b7379f762df8875",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzb68f/i_made_a_skill_that_hands_each_claude_code_task/",
+      "title": "I made a skill that hands each Claude Code task to the cheapest model that can do it (tested: about 9% cheaper)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "95629d71c478021a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzb5ey/agent_checks_what_an_apk_connects_to_then_deletes/",
+      "title": "agent checks what an APK connects to, then deletes the phone",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "caeeee64e1160e4d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzb2yk/i_made_a_skill_so_claude_draws_my_db_schema/",
+      "title": "I made a skill so claude draws my db schema without it turning into spaghetti",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d24fe278e448f566",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzavme/solo_dev_native_app_on_both_stores_claude_as_the/",
+      "title": "Solo dev, native app on both stores, Claude as the main developer: the rules I wrote after it handed me empty functions",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "fcbc7c507ed924b1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzavai/is_it_just_me_or_does_claude_have_a_major_uiux/",
+      "title": "Is it just me, or does Claude have a major UI/UX problem?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 42,
+        "comments": 33
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a7a406e6b7590426",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzat3i/your_agent_edited_a_file_you_never_asked_it_to/",
+      "title": "Your agent edited a file you never asked it to touch — and you only found it in the diff. How did you catch it?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ecc26b7eec2e0e51",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzaqjs/created_a_tool_for_refining_ai_written_text_with/",
+      "title": "Created a tool for refining AI written text with a better workflow",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e445f0fd67023ed1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzapni/i_am_in_a_conundrum_in_life_can_anyone_spare_a/",
+      "title": "I am in a conundrum in life, can anyone spare a pro or max code?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "087b12c1e618eb43",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzalj6/hi_is_there_anyone_willing_to_share_claude_guess/",
+      "title": "Hi is there anyone willing to share claude guess pass",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d3a9f21c506b361e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzai53/i_built_a_245_livestream_where_6_trading_bots/",
+      "title": "I built a 24/5 livestream where 6 trading bots compete on gold (simulated), using Claude Code for almost everything. Here’s how.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "06a14b512fe5cad7",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzad6i/why_does_the_cvp_access_flag_this_benigh/",
+      "title": "Why does the CVP access flag this benigh conversation?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0c0bd04081086a70",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzacks/can_i_use_gemini_4_models_in_claude_code_projets/",
+      "title": "Can I use Gemini 4 models in Claude Code Projets?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f935e474fdad7076",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzaa3a/claude被封了吗/",
+      "title": "Claude被封了吗",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "68ce05cff9b57052",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xza4oq/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1a00559ad546f174",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xza0dh/everything_in_the_project_context_is_treated_as_a/",
+      "title": "Everything in the Project Context is treated as a text file",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cd63c1a7d290662d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9wnj/thinking_of_switching_to_claude_i_have_questions/",
+      "title": "Thinking of switching to Claude, I have questions",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1eac45a035464dc4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9rcl/claude/",
+      "title": "Claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6b685165937c390e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9qmi/anthropic_folks_how_are_you_actually_measuring/",
+      "title": "Anthropic folks how are you actually measuring delivery in an AI-native SDLC?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c575c540f454d1e6",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9lqp/i_built_pooptv_using_sonnet_55_an_infinite_wall/",
+      "title": "I built poop.tv using Sonnet 5.5 - an infinite wall for posting anything",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a4fdd89f3473cb66",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9l54/built_with_claude_code_ramen_10_a_selfhosted/",
+      "title": "🍜 Built with Claude Code: Ramen 1.0, a self-hosted platform that governs the MCP tools Claude calls (SSO, guardrails, eval-gated deploys)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b57cae7fc58870af",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9hgv/when_will_claude_subscriptions_no_longer_be/",
+      "title": "When will Claude subscriptions no longer be subsidized by investors?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 12
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "514db5fac7a60b77",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9eub/team_plan_with_other_harnesses_pi_omp_bolt_sub/",
+      "title": "Team plan with other harnesses (pi, omp, bolt) - sub usage or extra billing?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9a0dc8fee73a8b2e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz973o/claude_agent_sdk_build_fullstack_ai_agent/",
+      "title": "Claude Agent SDK: Build Full-Stack AI Agent Applications",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d6e5b255cc56f248",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz96gx/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "16a6db2a2ef2dce2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz92iu/tired_of_claude_code_5hour_usage_limits_stalling/",
+      "title": "Tired of Claude Code 5-hour usage limits stalling mid-sprint? I built an open-source MCP task queue with auto-fallback (v1.0.2, MIT)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9fed1b1e75c761e5",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8sx0/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "bac5af2e1309fd54",
+      "url": "https://www.youtube.com/watch?v=_EA045CAK_M",
+      "title": "AI Generated Youtube Videos.. how?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "186467aaac3dd763",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8jmb/can_i_have_my_own_digimon_or_megamanexe_yet/",
+      "title": "Can i have my own digimon or megaman.exe yet?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e3bccbcc4d3c3588",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8jfe/why_cant_voice_chat_invoke_skills_verbally/",
+      "title": "Why can’t Voice Chat invoke skills verbally?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0a3faa6c81b5de26",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8e12/in_the_claude_mac_app_the_cowork_sidebar_seems_to/",
+      "title": "In the Claude Mac app, the Cowork sidebar seems to sort chats by when they were created, not by when I last used them. My active chats get buried under old ones. Is there a fix I am missing or one that is coming? Thanks!",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f7a9ac34880a6b42",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8bpu/quick_question/",
+      "title": "Quick question",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3a5d40b4c386b19f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8an7/jumpscare_warning_i_had_a_really_bad_nightmare/",
+      "title": "[JUMPSCARE WARNING] I had a really bad nightmare",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "92701d9f855805a9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz85hh/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2a6edfb9145cb635",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz82d1/i_made_quite_a_successful_ham_radio_app_with/",
+      "title": "I made quite a successful ham radio app with Claude, and now I made a game.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "417e5e80b3b4f18b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz8223/does_compaction_destroy_intent_curious_if_anyone/",
+      "title": "Does compaction destroy intent? Curious if anyone else has hit this",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 8,
+        "comments": 35
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1b88995459638890",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz7yur/asked_claude_code_for_a_pixelart_runandgun/",
+      "title": "Asked Claude Code for a pixel-art run-and-gun shooter with four stages and four bosses. Here’s Brasshail",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ead20cd026ec4f48",
+      "url": "https://i-made.itch.io/parkingpanic",
+      "title": "Inspired by Abyssal Garden, I asked Claude to make me a parking lot sim with NFS:U style car customisation. Cel Shaded Comic Book Art style with reflections.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b7e38bfe951050f5",
+      "url": "http://camaro.drewsum.us/",
+      "title": "I made an awesome web portal for my classic car",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "46527a25083996be",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz74bp/ran_a_blind_subagent_review_on_a_copilot_pr_that/",
+      "title": "ran a blind subagent review on a copilot PR that got reverted 8 months later. it caught both problems",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5303c83d69d444f8",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz739l/heres_a_easy_better_method_to_make_claude_make/",
+      "title": "Here's a easy better method to make Claude make better Blender 3D models",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 7,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "bf5a2e305ac438e0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz6y60/claude_code_helped_catch_an_assumption_in_our/",
+      "title": "Claude Code helped catch an assumption in our email sign-in screen",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f886ac2a995410e3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz6wdv/three_ways_to_load_a_rule_only_when_the_task/",
+      "title": "Three ways to load a rule only when the task needs it",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "182976904e280188",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz6tqj/anthropic_added_linked_billing_to_the_claude/",
+      "title": "Anthropic added linked billing to the Claude Platform (beta): users of third-party tools can pay for Claude usage from their own org, no API key sharing",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4c5277dee2f90d2e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz6khh/i_built_an_opensource_browser_workspace_for_my/",
+      "title": "I built an open-source browser workspace for my local Claude Code sessions so specs, files, and branch diffs stay in one window",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c7d35db7a74aeb44",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz6h06/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "fcde04afd3a6b5c2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz6guk/giving_claude_code_access_to_the_outside_world/",
+      "title": "giving claude code access to the outside world without bloating its context window",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "02f7b73aa78cfa41",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz60t5/upgrading_problem/",
+      "title": "Upgrading problem",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ac2f6c3405af45f4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz5xtj/how_can_i_get_better_blender_assets/",
+      "title": "How can I get better blender assets?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "933cf54114d714d8",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz5f2f/i_made_an_mcp_server_that_lets_claude_design/",
+      "title": "I made an MCP server that lets Claude design Instagram/LinkedIn carousels (free, no API key)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1cbd7289965daff1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz56o3/turned_one_of_my_nightmares_into_a_short_film/",
+      "title": "turned one of my nightmares into a short film",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "817474836a65dd44",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz4omz/i_built_a_toolkit_that_lets_claude_build_demo/",
+      "title": "I built a toolkit that lets Claude build demo videos of your product",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "51cd0d5c7cb88cce",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz4ojq/has_anyone_set_claude_up_for_a_ceo_or_board/",
+      "title": "Has anyone set Claude up for a CEO or board member? Did they keep using it?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 12
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4ddb92af49a90d0f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz4gqh/fbi_warning/",
+      "title": "FBI Warning...",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "20b19baa8e62b8e2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz4fmf/can_we_rule_out_aliens/",
+      "title": "Can we rule out aliens?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 13
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "619864b2ec083080",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz47a6/here_is_the_genius_of_fable_52_high/",
+      "title": "Here is the genius of Fable 5.2 high",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b523cdd1875c1210",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz46g0/i_built_a_3d_spine_designer_with_claude/",
+      "title": "I built a 3D spine designer with Claude.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "7cfe8374eb703c0d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz466q/usage/",
+      "title": "Usage?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "96e8632a284f9540",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz42kq/made_a_free_lightweight_clippingediting_app_for/",
+      "title": "Made a free, lightweight clipping/editing app for Windows, powered by OBS.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a920e7aecbbdfdd0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz40zj/tried_the_ginta_connector_didnt_expect_it_to/",
+      "title": "Tried the ginta connector, didn’t expect it to actually make a working site",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3c030f73440e8e8c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3yn8/i_built_the_mac_apps_i_use_every_day_with_claude/",
+      "title": "I built the Mac apps I use every day with Claude Code, 12 days from my first commit to notarized builds",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ec8718813b13a455",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3y0e/i_built_an_opensource_mobile_desktop_console_for/",
+      "title": "I built an open-source mobile & desktop console for Claude Code, Codex, Antigravity & Grok (read-only, 5s QR tunnel)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "97a4e1725ee3956e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3tz1/i_built_an_arena_where_claude_agents_fight_each/",
+      "title": "I built an arena where Claude agents fight each other in best-of-3 rounds. Your prompt is your fighting style.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4a0360955a77e676",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3t66/claude_duet_allow_help/",
+      "title": "Claude duet “allow” help?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5360693ee6a9a619",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3rhv/imagine_overengineering_the_way_you_ask_claude/",
+      "title": "Imagine overengineering the way you ask Claude for something 😂",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8da69bbb76b47da4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3mzl/add_multiple_accounts_on_the_app_ios_can_but_not/",
+      "title": "Add multiple accounts on the app? iOS can but not desktop app?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e2e6bf2698e74f6b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3huw/does_using_fable_make_opus_smarter/",
+      "title": "Does using Fable make Opus Smarter?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 6,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b25b819a988ae0aa",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3g4a/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b3f3543d8ee4a81a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3cks/fable_explains_where_its_mana_went_one_sentence/",
+      "title": "Fable explains where its mana went. One sentence.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ab97e13fdb4fc255",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3b6f/claude_ultra_or_gpt_pro_and_claude_max_5x/",
+      "title": "Claude Ultra or GPT Pro and Claude Max 5x",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e69abefe97ecf2b5",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz3a5o/fable_explains_where_its_mana_went_one_sentence/",
+      "title": "Fable explains where its mana went. One sentence.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8dca05a37b2ba023",
+      "url": "https://youtu.be/3oiuUrlPzYw?is=66no0PMKe-XGhgoP",
+      "title": "Is this video presentation being created by ai?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "201e01125e55177b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz34jp/can_claude_help_with_spicy_prose/",
+      "title": "Can Claude help with spicy prose?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "59c2f086b2289840",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz343v/refactoring_core_systems_of_my_game_with_claude/",
+      "title": "Refactoring core systems of my game with Claude Fable 5.2. Repel the Mongols in the jungles and mountains of Vietnam",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 7,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d2fa330972d997ce",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz2xfz/as_a_designer_i_can_finally_achieve_flow_in/",
+      "title": "As a designer, I can finally achieve flow in prototyping, but testing/maintenance is a bottleneck",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0acbab67e3763edd",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz2ora/claude_certification/",
+      "title": "Claude certification",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "08c8827fc59bb6c1",
+      "url": "https://blog.ju.wtf/2026/11/taking-back-control-of-my-amp/",
+      "title": "Taking back control of my amp",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8c63754f36fe4a2c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz2e6x/anthropic_admits_model_changes_led_to_claims_that/",
+      "title": "Anthropic admits model changes led to claims that their access disclosures were \"inadequate or misleading.\"Claude.ai still has no deprecation notice policy",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 4,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "77e513786df709b2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz2d3y/stop_button_didnt_stop_a_claude_agent_for_9/",
+      "title": "Stop button didn't stop a Claude agent for 9 minutes",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 37,
+        "comments": 59
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "73fd0e3d577dba4e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz2ctx/ia_revive_game_mobile/",
+      "title": "I.A REVIVE GAME MOBILE",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c4c8713f0725c989",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz2cjg/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "93a08ce8ba8c875f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz22sy/discussion_hub_for_new_claude_incident_elevated/",
+      "title": "Discussion Hub for new Claude incident: Elevated errors affecting the Google Docs connector on Nov 18, 2026",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 0
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b368be0dde64059e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz1xzc/with_all_the_ai_in_the_world_they_want_users_to/",
+      "title": "With all the AI in the world they want users to copy links around browsers",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "422490dccd48e13b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz1ppo/lost_access_to_claude_duet_despite_having_a/",
+      "title": "Lost access to Claude Duet despite having a access last week.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "203f09d7f74d6ab4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz1o8d/claude_desktop_app_logged_me_out_and_all_my/",
+      "title": "Claude desktop app logged me out and all my Claude Code sessions are gone",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a9b09964abb23bfd",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz1i0n/how_we_make_marketing_videos_with_claude_and/",
+      "title": "How we make marketing videos with Claude, and which styles have worked best depending on the footage you have",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "603cc65339ae2b55",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz1a02/has_anyone_used_claude_code_to_help/",
+      "title": "Has anyone used Claude Code to help reverse-engineer printer firmware (HP \"Dynamic Security\")?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2dc4c241a8983289",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz18zq/i_built_12_explorable_webgpu_worlds_with_claude/",
+      "title": "I built 12 explorable WebGPU worlds with Claude Code: raw shaders, procedural music, no engine",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cd3815af3d2ff913",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0z7k/wondering_if_anyone_has_unscrewed_a_hp_printer/",
+      "title": "Wondering if anyone has un-screwed a HP printer?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "47427c263416fdad",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0wru/i_built_an_offline_turnbyturn_navigation_mode/",
+      "title": "I built an offline turn-by-turn navigation mode into my Android car launcher with Claude Code",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9602693d7b4fe59c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0oid/anthropics_agentmemory_research_memory_is_mostly/",
+      "title": "Anthropic's agent-memory research: memory is mostly choosing what to discard",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 4,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "fd6da25019afb681",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0knj/i_built_a_free_opensource_mac_app_so_claude_code/",
+      "title": "I built a free, open-source Mac app so Claude Code can use my API keys without ever seeing them.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a238b6abf0e68883",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0dhs/overly_restrictive_safeguards/",
+      "title": "Overly restrictive safeguards",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "83df4a2cd2efac83",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0ddd/10_billion_screenshots/",
+      "title": "10 billion screenshots?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 18
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "dd6284dbfa75c17b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzzdb/do_the_guest_that_you_give_passes_to_effect_you/",
+      "title": "Do the guest that you give passes to effect you?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "fdbb21a992dfbdc7",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzyrm/claude_code_kept_tripping_over_my_accounts_in_one/",
+      "title": "Claude Code kept tripping over my accounts in one browser, so I built a Mac browser where every agent job gets its own Safari",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "606767363e5ab79c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzwh8/is_fable_52_a_new_model_or_is_it_just_in_a_harness/",
+      "title": "Is fable 5.2 a new model or is it just in a harness?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 11
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0ab142f07fed0131",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzpwc/can_i_connect_claude_and_chatgpt_into_one_agent/",
+      "title": "Can I connect Claude and ChatGPT into one agent without paying for API credits?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 24
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0dc08491672b1fa0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyznhy/im_quite_satisfied_with_the_product/",
+      "title": "Im quite satisfied with the product",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "bed1299fad674e1e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzlgy/i_measured_where_my_claude_code_tokens_go_most/",
+      "title": "I measured where my Claude Code tokens go. Most were spent reading code it didn't need, so I built AST skeletons (72–87% fewer tokens) and handoff hooks",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "de7bea873f472c0f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzjy3/guest_pass/",
+      "title": "(Guest Pass)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e7d6bbff30fe5ab5",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzhzd/open_sourcing_my_vibecode_setup_hope_you_guys/",
+      "title": "Open sourcing my vibecode setup. Hope you guys like it. Made a promo video",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5d5c9c016a5882e0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzgdu/gave_a_new_life_to_old_helio_x27_chinese_tablet/",
+      "title": "Gave a new life to old Helio X27 chinese tablet, Teclast T20, with no public source code",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 31,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ad1ca8dadef947d7",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzeg0/im_struggling_to_learn_electromagnetics_so_im/",
+      "title": "I'm struggling to learn electromagnetics, so I'm building  a tool to help me visualise textbook examples",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5bf2aad24b38fad2",
+      "url": "https://github.com/CaffeinatedSoftwareLLC/diakrisis",
+      "title": "Free 380M Decision Model That I Made Using Claude (and some others)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "83e7008dcb9c2738",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyz9to/ive_started_automating_my_talent_agency_with/",
+      "title": "I've started automating my talent agency with Claude + Notion. What workflows have you built?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "207bed9912d2436d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyz4we/how_do_you_structure_your_general_projects_and/",
+      "title": "How do you structure your general projects and chats?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1bd1ae7ca230788e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyz4om/i_used_fable_52_to_build_a_hogwarts_classroom/",
+      "title": "I used Fable 5.2 to build a Hogwarts classroom that my claude code agents can attend",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1be870af7ed3dcae",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyyoyk/fable_52_built_me_a_hogwarts_classroom_my_agents/",
+      "title": "Fable 5.2 built me a Hogwarts classroom my agents can attend",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3f040f8e59f6f68a",
+      "url": "https://youtube.com/shorts/HMeQ-p1UqtQ?feature=share",
+      "title": "Play.Choice",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "14f884758ae18768",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyyj9p/fable_52_built_me_a_hogwarts_my_agents_can_attend/",
+      "title": "Fable 5.2 built me a Hogwarts my agents can attend",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c8347048093b52a3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyydjd/anthropic_focused_in_vibecoders/",
+      "title": "Anthropic focused in vibecoders",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5556e75e649ce8e4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyyadf/why_am_i_using_a_single_frontier_model_when_i_can/",
+      "title": "Why am I using a single frontier model when I can use them all?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "12739df07a91c8f3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyyabp/i_committed_a_cardinal_sin_i_gave_claude_root_on/",
+      "title": "I committed a cardinal sin: I gave Claude root on my CachyOS (Kiln flavour) machine!",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f93023296a38ac11",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyy6es/im_a_sysadmin_not_a_programmer_a_few_months_with/",
+      "title": "I’m a sysadmin, not a programmer. A few months with two AI models (one coding, one reviewing) produced a ZFS backup tool that now runs on my production hosts. What worked and what burned days.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5fffd362a073c6e3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyxw8p/sonnet_45s_api_ends_nov_30_anthropic_already_has/",
+      "title": "Sonnet 4.5's API ends Nov 30. Anthropic already has a form for paid access to retired models — I'm asking them to add Sonnet 4.5.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 16,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "73825c9c549b551d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyxt3z/i_made_a_calm_butterfly_sorting_game_for_iphone/",
+      "title": "I made a calm butterfly sorting game for iPhone with Opus. Here’s what it built and how we worked.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 7,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1fe2293c9b60d759",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyxhyf/seeking_a_collaborator_to_package_our_electronic/",
+      "title": "Seeking a collaborator to package our electronic components export workflow into a Claude Agent Skill",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4c6a0c9b9aa7a837",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyxb9k/open_call_im_a_post00s_founder_building_an_ai/",
+      "title": "[Open Call] I'm a post-00s founder building an AI customer-acquisition system for electronic components export. Help me write the skill — profit-share, min $500.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a71e981d76c7e4b4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyxa6i/applied_it_for_out_of_curiosity/",
+      "title": "Applied it for out of curiosity",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2dbfacd75b9dc637",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyx8oe/created_my_own_bluebeam_and_revit/",
+      "title": "Created my own Bluebeam and Revit",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "206e298d27d75520",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyx6bf/we_built_an_opensource_bridge_to_use_claude/",
+      "title": "We built an open-source bridge to use Claude subscriptions with Codex computer use!",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2f85e43c32a98b55",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyx4an/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cc52729f0b5e78fe",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xywy7u/hey_can_someone_help_me/",
+      "title": "hey can someone help me",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "eac9241133b5117f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xywlqo/would_anyone_be_willing_to_share_a_7day_guest_pass/",
+      "title": "Would anyone be willing to share a 7-day Guest Pass?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ffd279f49dc17d7c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xywanj/why_using_fable/",
+      "title": "Why using Fable?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 23
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e12da4e9384824a9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyw8f1/claudes_quote_choosing_is_on_point_today/",
+      "title": "Claude's quote choosing is on point today",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6e9e7dc057e86926",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyw7yu/i_spent_8_months_building_a_story_game_where/",
+      "title": "I spent 8 months building a story game where Claude writes every scene as you play",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2b4397473735dfa5",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyw601/2_minutes_to_the_weekly_reset_how_does_this_make/",
+      "title": "2 minutes to the weekly reset... How does this make you feel?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0d0a13660ee6bfa1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyw5pg/nested_teams_admin/",
+      "title": "Nested Teams Admin",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a1998fb8acf709d7",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyw4tx/using_haiku_to_turn_building_photos_into/",
+      "title": "Using Haiku to turn building photos into structured descriptions for my 3D map",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9509f19dc51b60a1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyvj6a/claude_certification_suggestions/",
+      "title": "Claude certification Suggestions?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0b59eaeeeb0f87c3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyviee/we_built_a_way_for_coding_agents_to_verify_their/",
+      "title": "We built a way for coding agents to verify their memory against actual code",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "bb67a6fac2cd3488",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyvfyt/building_a_browser_jrpgpbbg_with_claude_code_5/",
+      "title": "Building a browser JRPG/PBBG with Claude Code – 5 weeks, 1,694 commits, ~200 players",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3867f6c28a889f66",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyve9o/coming_back_to_a_week_old_claude_branch_is_brutal/",
+      "title": "Coming back to a week old Claude branch is brutal",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8165bfacac7f100e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyv69n/5hour_limit_does_not_start_when_resetted_during/",
+      "title": "5hour limit does not start when resetted during ongoinf work",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6e42252df0ebdc52",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyv4ib/i_built_an_app_for_reviewing_the_specs_and_plans/",
+      "title": "I built an app for reviewing the specs and plans Claude Code writes, and it sends your notes back to the agent",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5e5c7a1a72eeaf11",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyv3s7/has_this_happened_to_you_with_a_session_reset_or/",
+      "title": "Has this happened to you with a session reset or CLAUDE.md files?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d73e0040a554b598",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyv0mm/looking_for_a_claude_guest_pass/",
+      "title": "Looking for a Claude Guest Pass",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "efa2d7d2cb9e9e54",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuqtw/claude_fable_52_is_a_massive_downgrade_and_truely/",
+      "title": "Claude Fable 5.2 is a massive downgrade and truely a massive dissapointment and feels unusable and VERY unpredictable.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 37
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "26976789e8f2be9e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuqpz/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b1423108ff1e0f92",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuph7/opus_still_the_goat/",
+      "title": "Opus still the Goat",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e39939c6bcec86ea",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyunl7/i_got_tired_of_alttabbing_to_approve_claude_code/",
+      "title": "I got tired of alt-tabbing to approve Claude Code, so I made the MacBook notch show approvals and usage limits",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e903381cc2ec1d7b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyumdf/its_about_claude/",
+      "title": "Its about claude !!!!",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0ff5b21325926aed",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuh4g/used_claude_code_to_unlock_jio_5g_on_korean_s25/",
+      "title": "Used Claude Code to unlock Jio 5G on Korean S25 Ultra Handset",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 39,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e484a56ab5a6e338",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuf9o/sorry_guys/",
+      "title": "Sorry Guys",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6c57b9375dc54b52",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyudg9/you_can_use_claude_with_the_best_computer_use_now/",
+      "title": "You can use Claude with the best computer use now! :D",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ef8ece1424e3df2a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuc5i/opus_kept_quoting_cyber/",
+      "title": "Opus kept quoting \"Cyber\"",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 8,
+        "comments": 18
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "86fdc5160d377b4d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyuaty/i_made_a_claude_code_skill_that_draws_how_things/",
+      "title": "I made a Claude Code skill that draws how things work like old patent sheets",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3f73a71feec07b74",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyu8w1/title_how_much_do_you_spell_out_in_your_prompts/",
+      "title": "Title: How much do you spell out in your prompts to coding assistants?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "62151e6d95ce7d82",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyu489/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "78821e314a82cfc2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyu3dq/am_i_the_only_one_who_thinks_opus_has_been_a/",
+      "title": "Am I the only one who thinks Opus has been a total dumbass this week?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "aaffe08589ce8be1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytv28/i_built_a_14ms_circuit_breaker_env_dlp_firewall/",
+      "title": "I built a 1.4ms Circuit Breaker & .env DLP Firewall for Claude MCP / Cursor so runaway agents don't bankrupt you overnight",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "980d2770ce752572",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytsl8/claude_inspires_creativity/",
+      "title": "Claude - Inspires creativity",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 6,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e68f087c0b921d15",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytr0y/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4788368d3605e52a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytnrq/antialgorithm_for_claude/",
+      "title": "Antialgorithm for claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "60e600413cf38e2e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytmep/how_can_i_get_better_with_claude_code_not_a/",
+      "title": "How can I get better with Claude code? (Not a beginner but not a pro)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 18
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "bc887577bd3d9b0e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytko1/free_claude/",
+      "title": "Free Claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 0
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "76c5602a2b24a70e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytbyf/i_randomly_cant_upload_some_files_to_claude/",
+      "title": "I randomly can't upload some files to claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "025a753f08607a22",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xytbju/i_built_a_14ms_circuit_breaker_env_dlp_firewall/",
+      "title": "I built a 1.4ms Circuit Breaker & .env DLP Firewall for Claude MCP / Cursor so runaway agents don't bankrupt you overnight",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1fd95729a1b14825",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xysz1s/i_built_a_local_dashboard_for_my_claude_code/",
+      "title": "I built a local dashboard for my Claude Code sessions with Claude Code (free, open source, works on your phone)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9db97288f9eb9568",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyswnz/discussion_hub_for_new_claude_incident_some_users/",
+      "title": "Discussion Hub for new Claude incident: Some users unable to sign in with Apple on claude.ai and the Claude iOS app on Nov 17, 2026",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c5c7a5be92efcfd4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xysv8o/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ae4a1802ab642f8f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xystin/my_brain_was_vibe_rotting_so_i_made_a_game_that/",
+      "title": "My brain was vibe rotting, so I made a game that quizzes me on the code Claude writes",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "37f4f4f08b242f98",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyslbm/claude_guest_pass/",
+      "title": "Claude guest pass",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a4e5c576d0b57e82",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyskk7/lets_build_something_fun_and_go_crazy/",
+      "title": "Let's build something fun and go crazy!!!!!!",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "dd51c11c0364079c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xysau2/windsor_connector_tiktok_analytics/",
+      "title": "Windsor connector TikTok analytics",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1ae85d158125894e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xys8dc/mapping_out_a_basketball_or_volleyball_court/",
+      "title": "Mapping out a Basketball or volleyball court",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5a95cfaed2266a74",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xys82w/its_crazy_how_quickly_the_costs_add_up_on_long/",
+      "title": "It's crazy how quickly the costs add up on long running tasks",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 16
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ad0b1516600f3145",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xys10b/i_built_a_zerodependency_cli_to_sync_global/",
+      "title": "I built a zero-dependency CLI to sync global instructions, MCP servers, and skills across Claude Code, Codex, OpenCode, and Antigravity (with one-command undo)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "016d2022242de7d0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyrxoz/journalists_media_people_looking_for_tools_and/",
+      "title": "Journalists / media people: Looking for tools and ideas for daily work",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 7,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cda22c518d12803c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyrm53/sometimes_its_better_to_give_an_agent_part_of_a/",
+      "title": "Sometimes it's better to give an agent part of a language, not all of it",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a1520c5ceb2cc013",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyrkre/is_it_possible_to_invest_2_billion_in_building/",
+      "title": "Is it possible to invest $2 billion in building your own private AI server infrastructure",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 28
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e195154e3f708482",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyrdyb/astra_62_is_degraded_already/",
+      "title": "Astra 6.2 is degraded already",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2baed5d9fcb75bf5",
+      "url": "https://jim.scot/",
+      "title": "\"OBD Mechanic\" Android app, open testing (UK only).",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5d01a7c1664cd87f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyr6sm/i_need_an_job_urgently_please_help_me_if_you_know/",
+      "title": "I need an job urgently.... Please help me if you know any genuine... Please let me know",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0be8b9d5f6c35e21",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyr4pt/claude_dashboards_but_open_source/",
+      "title": "Claude dashboards but open source",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "600ff3ca648fac90",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqz79/what_did_you_finally_build_with_ai_that_youd/",
+      "title": "What did you finally build with AI that you'd wanted for years?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e55f638aee3f45da",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqsuo/i_built_an_opensource_skill_that_turns_a_tennis/",
+      "title": "I built an open-source skill that turns a tennis video into a coaching report: scores, annotated frames, animated fixes",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5766f803dd56185a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqqkv/vibe_coding_killing_developers/",
+      "title": "Vibe coding killing developers?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "848bdd1d78c3c3f3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqq89/in_this_sim_a_claude_betrayed_its_kind/",
+      "title": "In this sim, a Claude betrayed its kind",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "7738d8de28a0c4a3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqjzc/hi_is_anyone_willing_to_share_a_7day_claude_trial/",
+      "title": "hi! is anyone willing to share a 7-day Claude Trial with me please?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c954e024602f63db",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqe90/im_a_welder_who_doesnt_write_code_i_shipped_an/",
+      "title": "I'm a welder who doesn't write code. I shipped an iPhone + web + Telegram app with Claude Code. Here's the workflow that keeps it from breaking",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2d57147d79bd671b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqbwk/running_searches_on_linkedin_risks/",
+      "title": "Running searches on LinkedIn - risks?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6fa25b0e07daab62",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyq6wt/made_a_tool_that_lets_claude_use_sites_with_no/",
+      "title": "Made a tool that lets Claude use sites with no API (YC directory, Spotify podcast charts, Substack)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "845ce355aff90384",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyq3mv/need_help_please/",
+      "title": "Need help please",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0c4e691afa04d2a2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyq0fy/claude_age_limit_can_a_14yearold_buyuse_it/",
+      "title": "Claude age limit - Can a 14-year-old buy/use it?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e9f5ad25d2a4fa55",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyq03v/looking_for_tips_in_assisted_coding/",
+      "title": "Looking for tips in assisted coding",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9b9b273ffb42820d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xypx34/fable_52_has_no_chill/",
+      "title": "Fable 5.2 has no chill",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 10,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9fd640dcf4bfd910",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xypwby/claude_code_agent_teams_cost_7x_the_tokens_is_the/",
+      "title": "Claude Code agent teams cost ~7x the tokens. Is the team better or just bigger?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "7ae78afc7202a86a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xypk4g/sell_your_platform_claude_site_credit/",
+      "title": "Sell Your Platform Claude site Credit",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f4dcfe37f61dbcf0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xypitz/readmeeditorskill/",
+      "title": "README-Editor-skill",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "45707e7eae16f2a6",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xypcq6/looking_for_a_20_claude_pro_alternative_with/",
+      "title": "Looking for a ~$20 Claude Pro alternative with decent Opus 5.5 quotas",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2415b04b5b29e465",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp90i/claude_fail_to_connect_into_account/",
+      "title": "Claude fail to connect into account",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cc133538538b8988",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp7ch/now_a_session_can_open_a_nested_session_and_use/",
+      "title": "Now a session can open a nested session and use agents",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d1452bf5d03dc48f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp6cp/waited_5_hours_to_ask_this_and_got_slapped_right/",
+      "title": "Waited 5 hours to ask this and got slapped right away.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6789c8ff5c514713",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp5ej/i_spent_6_hours_with_claude_to_create_an_anime/",
+      "title": "I spent 6 hours with Claude to create an anime style fight between a galaxy eating monster and a mecha knight sent to save the entire universe for my app's trailer",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 10
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9c7cce642239db27",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp4pt/mildly_interesting_oneshotprompting/",
+      "title": "Mildly interesting \"One-Shot-Prompting\" Benchmark/Experiment",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "69fbb2409e0c5053",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp25i/guys_make_sure_you_thank_the_agentschat_after/",
+      "title": "guys make sure you thank the agents/chat after they complete the tasks... i saw a reel which says that AI's gonna protect those who were nice to it when it takes over the world in 2050. be safe y'all",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c790c192dd7d4252",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp21f/claude_pro_analog/",
+      "title": "Claude Pro analog?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "7bf42e1a9e0bdac0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp1fw/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "75eb9f5371cc8a96",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyp0w1/i_just_used_a_reset_and_went_from_100_to_85_wtf/",
+      "title": "I just used a reset and went from 100% to 85% wtf ?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 12
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "39da0c3a58793ba9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyoz1q/i_built_a_full_browser_racing_game_with_claude/",
+      "title": "I built a full browser racing game with Claude writing all the code (three.js, free, no install)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 6,
+        "comments": 39
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2ab9a1e44de4985d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyoyxv/duet_excessive_usage_on_pro_plan/",
+      "title": "Duet - Excessive Usage on Pro Plan",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "38d8d0d190219106",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyoyw9/on_the_subject_of_compact_vs_a_new_session_in/",
+      "title": "On the subject of /compact vs a new session in Claude Code. Letting your orchestrator end sessions at 30% context full, old session writes a handoff doc, starts a new session, auto name it and archive old session.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 8,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "58bcb348da07f268",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyoye1/claude_desktop_team_plan_every_claude_docs_edit/",
+      "title": "Claude Desktop - Team Plan - Every Claude Docs edit requires permission.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "62d18d3dfc97c98e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyovac/id_never_made_a_custom_map_before_claude_code_on/",
+      "title": "I'd never made a custom map before. Claude Code on Omarchy Linux got two onto the Steam Workshop",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8da55c6bef865ccf",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyotnd/i_built_a_claude_code_plugin_that_shows_what_the/",
+      "title": "I built a Claude Code plugin that shows what the agents are doing as glass cubes, a circuit board or a little solar system",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ba6c5adeb89a7bfb",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyorou/ai_companies_think_the_future_is_smart_wars_and/",
+      "title": "AI companies think the future is smart wars and the end of copyright. I think it's the end of the OS.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 23
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "53d9626044f87238",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyopej/i_built_an_mcp_server_with_claude_code_so_claude/",
+      "title": "I built an MCP server with Claude Code so Claude can draft and schedule social posts, with an approval step",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c99e92b5fec0961a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyon9p/how_would_you_set_up_claude_code_for_agentic_qa/",
+      "title": "How would you set up Claude Code for agentic QA work vs running a product as a PO? (non-programmer, built a restaurant POS with it)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "23cd9f625f0be766",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyon84/ngl_using_claude_this_way_helps_with_my_adhd/",
+      "title": "Ngl using Claude this way helps with my ADHD",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3376564c1c88c4b4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyom1t/yea_senior_dev_agi/",
+      "title": "Yea Senior Dev AGI",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "17dcdbf9b0f6b760",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyohxp/five_things_break_every_tradingview_script_claude/",
+      "title": "Five things break every TradingView script Claude writes for me, and four of them are old versions of the language",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3e1d541894eff8a1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyofh4/how_to_run_multiple_claude_accounts_at_the_same/",
+      "title": "How to run multiple Claude accounts at the same time",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 9
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4a0825c4be5ed074",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyobtr/claude_just_changed_the_game_heres_everything_new/",
+      "title": "Claude Just Changed the Game — Here's Everything New",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5676556440355474",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo9at/i_didnt_know_that_opus_can_react_to_my_message/",
+      "title": "I didn't know that opus can react to my message.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2e4d7e62c09fc92a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo91i/what_we_learned_letting_claude_post_to_real/",
+      "title": "What we learned letting Claude post to real social accounts without it going rogue",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "69ea8ba3043f03bc",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo8dc/does_anyone_have_a_free_7day_claude_pass_they/",
+      "title": "Does anyone have a free 7-day Claude pass they could give me? 🦔🥺",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ac0939cd6751f0ad",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo88u/over_zealous_claude_code_notice/",
+      "title": "Over zealous Claude Code Notice",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0d1d88d22a9aa99f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo67g/i_put_my_fablemade_magnifying_glass_right_on_top/",
+      "title": "I put my fable-made magnifying glass right on top of the landing page",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a89bfe67facd6873",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo5el/i_built_a_way_to_play_poker_chess_and_liars_dice/",
+      "title": "I built a way to play poker, chess and Liar's Dice against Claude, right in the chat",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4a38c5f3116d256c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo2cp/my_claude_agent_kept_getting_stuck_on_we_sent_you/",
+      "title": "My Claude agent kept getting stuck on \"we sent you a code\", so I gave it its own inbox. Blind-tested the code extraction: 74%. Here's what breaks it.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a75fab8cb40fc7d4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo2bj/didnt_know_that_ai_model_can_send_react_to_my/",
+      "title": "Didn't know that AI model can send react to my message",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5228087bbbdf9464",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyo1qn/trying_to_learn_to_draw_so_i_made_a_little_app_to/",
+      "title": "Trying to learn to draw, so I made a little app to help me practice",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "42a44f6611d676f8",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyny47/claude_guest_pass_referral/",
+      "title": "Claude guest pass / referral",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "86cfbfa5c66cc491",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynxxv/i_built_ai_juggler_to_manage_native_claude_coding/",
+      "title": "I built AI Juggler to manage native Claude coding sessions on macOS (MIT, beta)",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0bd4bb88ed25c0ee",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynwin/anthropic_is_preparing_for_their_ipo/",
+      "title": "Anthropic is preparing for their IPO 😭",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "1432283c18bbf6b1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynsgk/claude_code_is_my_whole_video_team_a_cartoon_of/",
+      "title": "Claude Code is my whole video team: a cartoon of me, my cloned voice, and animations rendered from HTML. Full pipeline",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5ec99c315706b2e0",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynsfx/weird_issue_caused_by_fable/",
+      "title": "Weird issue caused by Fable",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4cb46c931aba8295",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynq1x/ai_made_me_faster_i_built_something_with_claude/",
+      "title": "AI made me faster. I built something with Claude Code to find out if it was making me better",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "492eb78730a61802",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynmr4/the_claude_cowork_dashboard_is_extremely/",
+      "title": "The Claude Cowork Dashboard is extremely unintuitive when working with multiple projects",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "48db26ca4aa1b7b6",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynliy/no_way_to_bulk_delete_uploaded_files_without/",
+      "title": "No way to bulk delete uploaded files without deleting your chats?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8dfe0e5e3cdc63cf",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xynigu/the_claude_cowork_dashboard_is_extremely/",
+      "title": "The Claude Cowork Dashboard is extremely unintuitive when working with multiple projects",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c667da44081ce039",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyna02/im_digging_the_quotes_that_claude_has_been/",
+      "title": "I'm digging the quotes that Claude has been surfacing lately",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "364abc7065d4aca3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyn6jt/im_a_retired_tattoo_artist_and_i_built_a_full/",
+      "title": "I’m a retired tattoo artist and I built a full iPhone rhythm-puzzle game with Claude. It just went live on the App Store",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "caccca76b6ea9a6a",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyn4ev/what_can_you_do_with_claude_ai/",
+      "title": "What can you do with Claude Ai ?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c25e5ae037357159",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyn1au/which_of_your_mcp_servers_eat_your_context_window/",
+      "title": "Which of your MCP servers eat your context window? A command that tells you",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "a4e13c355c76b1b9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymznv/i_laughed_at_the_unexpectedness/",
+      "title": "I laughed at the unexpectedness.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "373dd8d07a036c60",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymxe2/i_told_a_subagent_no_bulk_crawling_in_the_prompt/",
+      "title": "I told a subagent “no bulk crawling” in the prompt. It tried to crawl 720 sites anyway and was only stopped by the network",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 30
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "8abbaad9996fe316",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymv5a/i_burned_9_billion_tokens_last_month_and_got/",
+      "title": "I burned 9 billion tokens last month and got nothing for it, so I built a game that turns Claude Code usage into a leaderboard",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "3d40b56cbfb73bde",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymjox/giving_claude_code_access_to_the_outside_world/",
+      "title": "Giving claude code access to the outside world without bloating its context window .....",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "5161de7f4cc3c283",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymivj/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "14e5ae7f5819de86",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymg27/we_built_minions_a_swarm_of_coding_agents_that/",
+      "title": "We built Minions, a swarm of coding agents that work as a team",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "89e20f28aa45aa54",
+      "url": "https://dev.to/mkare/claude-fable-52-changed-the-rules-1280-updates-just-broke-your-defaults-3bjn",
+      "title": "Claude Fable 5.2 Changed the Rules. 1,280 Updates Just Broke Your Defaults",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "0aa16a11281379d2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymddk/i_benchmarked_claude_codes_code_mode_across_4/",
+      "title": "I benchmarked Claude Code's \"Code Mode\" across 4 models and 192 runs: big savings on MCP-heavy work, little on file work",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 8,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "b3dd3393bd5fd330",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymc7q/i_built_a_mac_app_where_claude_code_and_codex/",
+      "title": "I built a Mac app where Claude Code and Codex draw your app's screens before they build them, and keep every version",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "c76cf7e9dc59028e",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymafq/how_come_sonnet_55_ranks_higher_than_fable_51/",
+      "title": "How come Sonnet 5.5 ranks higher than Fable 5.1",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 11
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "ce49a9f8f531aa8f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xym9xk/claude_weekly_limit_feels_too_low/",
+      "title": "Claude weekly limit feels too Low",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "fae18ab2505174d2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xym8er/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d373003afd5291d6",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xym57n/asked_claude_code_for_a_grand_prix_racer_with/",
+      "title": "Asked Claude Code for a Grand Prix racer with tyre wear, DRS and real pit stops. Here’s Gridburn",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "fcd29c1ad53e7bba",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylqry/claude_compacting_short_conversations/",
+      "title": "Claude compacting short conversations?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 17
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "12344a214e686e5d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylpna/i_was_tired_of_paying_for_8_mac_utilities_so_i/",
+      "title": "I was tired of paying for 8 Mac utilities, so I built one free, open-source app that replaces them, with Claude Code",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "2bb29fae3f95b21d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylper/loosing_software_sales_due_to_claude/",
+      "title": "Loosing software sales due to Claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4f4aa0111c542b51",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylopo/how_i_used_claude_code_to_build_a_media_server_a/",
+      "title": "How I used Claude Code to build a media server, a live TV service and its TV and phone apps",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "776231bca9949073",
+      "url": "https://getlirico.pages.dev/",
+      "title": "What do you guys do while Claude Code is coding?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6260d9af1d3ae401",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylmkm/resuming_after_a_break_costs_10x_on_a/",
+      "title": "Resuming after a break costs 10x? On a subscription my breaks cost $12 in 2.5 months. On an API key, about $650",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 12
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "cc2487cb71c44076",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyllxl/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "25b6a98bd0aba9a9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylk57/steal_the_spotlight_made_with_claude_agents_ue5/",
+      "title": "Steal the spotlight: made with claude agents UE5 and works on the web",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "e658def519e51ec7",
+      "url": "https://ai.plainenglish.io/claude-fable-5-2-changed-the-rules-1-280-updates-just-broke-your-defaults-efb2ca1733e2?source=friends_link&sk=8d63ee19de7b6aa9d6f7c3b594975ac6",
+      "title": "Claude Fable 5.2 Changed the Rules. 1,280 Updates Just Broke Your Defaults.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "f1b03bc63774b0b4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylgl1/my_claude_code_setup_opensourced_with_the_reason/",
+      "title": "my Claude Code setup, open-sourced, with the reason behind every rule",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "d24d6f1b037da1ed",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xylesm/two_weeks_of_using_opus_55_for_everyday_work_and/",
+      "title": "Two weeks of using Opus 5.5 for everyday work and saving Fable 5.2 for one big refactor: how the split actually felt",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "9a403ad821f7184b",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyl8bx/mcp_tools_is_15_usage_a_lot_i_am_not_using_the/",
+      "title": "MCP tools: Is 1.5% usage a lot ? I am not using the tools in this session",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 2,
+        "comments": 6
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "7c0008f595a4043f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyl5gy/since_claude_writes_my_code_i_stopped_minding/",
+      "title": "Since Claude writes my code, I stopped minding when teammates push commits to my PR",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 0,
+        "comments": 5
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "4b2b0a013c84412f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyhf6r/removed_by_moderator/",
+      "title": "[ Removed by moderator ]",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "6295e6299a0fd94d",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyasw3/disguising_claude_as_a_google_doc/",
+      "title": "Disguising Claude as a Google Doc",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1,
+        "comments": 2
+      },
+      "verdict": "drop",
+      "reason": "low-engagement"
+    },
+    {
+      "id": "889973f9137bec51",
+      "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+      "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
+      "sources": [
+        "latent-space"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "889973f9137bec51",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Newsletter roundup of OpenAI's GPT-6.2 Astra and Sol launch, with Artificial Analysis pricing and benchmark figures, early mixed tester reactions, Microsoft and Google launches, and a few harness-cost research items. Heavy on model benchmarks and IPO commentary.",
+        "whyItMatters": "Mostly competitor model news outside Claude Code; the harness-cost spread and subagent notes are the only bits touching agent practice.",
+        "confidence": "medium"
+      },
+      "final": 3.5
+    },
+    {
+      "id": "e7d59311e7f1dc04",
+      "url": "https://madrobot.blog/2026/11/17/microsoft-mai-code-2-ignite-cheaper-openai-anthropic/",
+      "title": "Microsoft says its new MAI Code 2 does 96% of Claude Opus 5.5’s work for 5% of the price",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 1102,
+        "comments": 163
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "e7d59311e7f1dc04",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [
+          "vendor_marketing",
+          "unverified_benchmark"
+        ],
+        "category": "release",
+        "summary": "Reddit post on Microsoft's MAI Code 2 family, claiming 96% of Claude Opus 5.5 quality at 5% of the price on Microsoft-chosen benchmarks. Post notes the comparison uses a 50% promotional price and that the figures are unverified. Comments are mostly snark.",
+        "whyItMatters": "Vendor-picked benchmarks with discounted pricing; no independent evidence yet, so it does not change a Claude Code workflow.",
+        "confidence": "medium"
+      },
+      "final": 0
+    },
+    {
+      "id": "7c8584ac324176ee",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xzcsdg/claude_code_is_insane_my_entire_selfhosted/",
+      "title": "Claude Code is insane. My entire self-hosted Netflix is 17 MB.",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 752,
+        "comments": 160
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "7c8584ac324176ee",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [
+          "self_promo_no_artifact"
+        ],
+        "category": "tool",
+        "summary": "Promotion for a self-hosted media app built with Claude Code that consolidates the arr suite into one app, citing GitHub stars and Docker pulls. No technique or engineering detail is shown.",
+        "whyItMatters": "Hobby media-server product with no reusable agent technique for multi-repo or agent workflows.",
+        "confidence": "medium"
+      },
+      "final": 0
+    },
+    {
+      "id": "6c3681e3bb150c73",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz0jhy/the_89_billion_token_strawberry/",
+      "title": "The 8.9 billion token strawberry",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 721,
+        "comments": 86
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "6c3681e3bb150c73",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Joke post about a strawberry image generated over two weeks, with a link to a methodology page and a disclaimer about scams. Nothing about Claude Code or agent practice.",
+        "whyItMatters": "Off-topic for a Claude Code engineer.",
+        "confidence": "medium"
+      },
+      "final": 0
+    },
+    {
+      "id": "5545a3c7c83c4af2",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyzkct/is_everything_becoming_claudefied/",
+      "title": "Is everything becoming \"Claudefied\"?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 622,
+        "comments": 199
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "5545a3c7c83c4af2",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Discussion of a Claude-flavoured writing style showing up in presentations and ads. Commenters trade examples of its phrasing. Pure opinion with no technique.",
+        "whyItMatters": "Writing style commentary with no bearing on agent configuration or verification.",
+        "confidence": "medium"
+      },
+      "final": 1.8
+    },
+    {
+      "id": "35db335ff2b5dba4",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz7t9u/how_did_this_happen/",
+      "title": "How did this happen?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 438,
+        "comments": 140
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "35db335ff2b5dba4",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Screenshot of Claude answering a math question in Chinese, with jokes about the answer. No technical content.",
+        "whyItMatters": "A chat screenshot with no agent or Claude Code relevance.",
+        "confidence": "medium"
+      },
+      "final": 0
+    },
+    {
+      "id": "e2b05a7b64a57002",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyxhyj/i_gave_claude_access_to_my_lecture_recordings_and/",
+      "title": "i gave claude access to my lecture recordings and now it finds every exam hint my prof drops",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 327,
+        "comments": 40
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "e2b05a7b64a57002",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 1,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "A student's study app that exposes lecture transcripts and inbox data to the user's own Claude through MCP, with the app itself running no AI. Shows output such as slide outlines and timestamped exam hints. No code, config or evaluation is given.",
+        "whyItMatters": "A personal MCP-over-data pattern, but it is a demo with no reusable technique for large codebases.",
+        "confidence": "low"
+      },
+      "final": 2.7
+    },
+    {
+      "id": "40153feee1fb0f32",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyou91/i_made_the_frontier_models_race_jets_against_tom/",
+      "title": "I made the frontier models race jets against Tom Cruise through the canyon in Top Gun: Maverick",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 302,
+        "comments": 50
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "40153feee1fb0f32",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "research",
+        "summary": "Demo where Claude Code built a Top Gun Maverick canyon simulator and frontier models each wrote autopilot code, fed 56 state numbers ten times per second, to race through gates. A fun comparison, but the post gives no measurements or method beyond the setup description.",
+        "whyItMatters": "Interesting harness for comparing models on code-as-policy tasks, but without numbers it is entertainment rather than an evaluation.",
+        "confidence": "low"
+      },
+      "final": 3.3
+    },
+    {
+      "id": "37dbf301f7db9950",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xywpee/antialgorithm_for_claude_free_skill_thats_stops/",
+      "title": "Antialgorithm for claude: free skill thats stops most average pick",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 239,
+        "comments": 12
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "37dbf301f7db9950",
+        "relevance": 2,
+        "novelty": 1,
+        "actionability": 2,
+        "evidence": 1,
+        "hypeFlags": [
+          "self_promo_no_artifact"
+        ],
+        "category": "tool",
+        "summary": "Reddit post announcing a free Claude Code skill called antialgorithm that pushes Claude away from its safest creative picks when choices are left open. Shows a six-poster before/after image. Comments add a two-mode idea: diverge for options, then lock a design system; and arbitrary constraints to force variety.",
+        "whyItMatters": "Offers a reusable skill pattern for creative divergence, though the post gives no repo link or method detail.",
+        "tryThis": "Install the antialgorithm skill and ask for five naming options with the seed step on.",
+        "confidence": "low"
+      },
+      "final": 3.7
+    },
+    {
+      "id": "3f60fb9bf39561f9",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyvsbl/do_anthropic_employees_get_free_claude_accounts/",
+      "title": "Do Anthropic employees get free Claude accounts?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 168,
+        "comments": 86
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "3f60fb9bf39561f9",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Speculation about whether Anthropic staff get free accounts, with commenters citing internal API spend limits. Nothing about Claude Code techniques or features.",
+        "whyItMatters": "Gossip about perks and internal budgets gives no workflow or technical signal for this reader.",
+        "confidence": "medium"
+      },
+      "final": 0
+    },
+    {
+      "id": "731314a55d28d988",
+      "url": "https://www.zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc",
+      "title": "Anthropic Paid Rubio's Ex-Chief of Staff's Firm $740k.it Lobbied His NSC",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 98,
+        "comments": 16
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "731314a55d28d988",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "incident",
+        "summary": "Political and lobbying story about Anthropic's lobbying firms, Rubio, and Nvidia's Jensen Huang's ouster, plus IPO and open-weight model dynamics.",
+        "whyItMatters": "Funding, lobbying and policy news is explicitly outside this reader's interests.",
+        "confidence": "medium"
+      },
+      "final": 0.7
+    },
+    {
+      "id": "c126557379ccc7cf",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyle8a/something_happened/",
+      "title": "Something happened",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 152,
+        "comments": 97
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "c126557379ccc7cf",
+        "relevance": 1,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "User complaints that Claude Code usage quota dropped sharply after a weekly reset, with commenters reporting similar jumps and an A/B usage change. No measurements or official explanation are given.",
+        "whyItMatters": "Quota anomalies matter for planning, but anecdotal complaints without numbers or a method give little to act on.",
+        "confidence": "medium"
+      },
+      "final": 1
+    },
+    {
+      "id": "2eb019014e0280f1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xze4nn/claude_is_getting_way_too_comfortable/",
+      "title": "Claude is getting way too comfortable 😂",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 145,
+        "comments": 4
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "2eb019014e0280f1",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [
+          "engagement_bait"
+        ],
+        "category": "opinion",
+        "summary": "Humor post with a screenshot and jokes about Claude getting too familiar. No technical content.",
+        "whyItMatters": "Pure humor with no technical content.",
+        "confidence": "high"
+      },
+      "final": 0
+    },
+    {
+      "id": "54568103aadf9fab",
+      "url": "https://news.ycombinator.com/item?id=50536468",
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 85,
+        "comments": 40
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "54568103aadf9fab",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 1,
+        "hypeFlags": [
+          "vendor_marketing"
+        ],
+        "category": "tool",
+        "summary": "YC launch of StarSling, GitHub Actions runners on Zen 5 with ephemeral sandboxes and agents that open PRs to speed up CI. A commenter raises the concern that test-trimming changes look like wins on speed alone, and asks how they check that bugs are still caught. The launch itself gives no benchmark method.",
+        "whyItMatters": "Agent-driven CI optimization is relevant to large repos, but the verification question about trimmed tests is unanswered.",
+        "confidence": "medium"
+      },
+      "final": 3.7
+    },
+    {
+      "id": "080a34f56b29692c",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyw48n/when_i_get_rich_i_wont_tell_anyone_but_there_will/",
+      "title": "When I get rich, I won't tell anyone, but there will be signs",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 129,
+        "comments": 8
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "080a34f56b29692c",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Joke post with comments about getting rich and paperclip optimization. No technical content.",
+        "whyItMatters": "Humor with no technical content.",
+        "confidence": "high"
+      },
+      "final": 0
+    },
+    {
+      "id": "b955388224554f43",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+      "sources": [
+        "hacker-news"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 52,
+        "comments": 7
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "b955388224554f43",
+        "relevance": 1,
+        "novelty": 2,
+        "actionability": 1,
+        "evidence": 2,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "Open-source LLM inference engine for AWS Trainium serving GLM-5.3-Flash with NKI megakernels, prefix cache and an OpenAI-compatible API. Includes reproducible build steps and a benchmark table on the AgentX coding-agent replay with methodology in the docs. Commenters question the tokens-per-minute metric.",
+        "whyItMatters": "Reproducible Trainium inference with agent-trace benchmarks is niche for this reader, though it is not Claude Code focused.",
+        "confidence": "medium"
+      },
+      "final": 4.8
+    },
+    {
+      "id": "8e550380f2190fc5",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz923g/would_opus_56_be_the_cheapening_model/",
+      "title": "Would Opus 5.6 be the \"cheapening\" model?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 83,
+        "comments": 50
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "8e550380f2190fc5",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Speculation about whether the next Claude Opus will be a cheaper model, with commenters asking Anthropic to keep Opus 5.5 unchanged.",
+        "whyItMatters": "Model-speculation chatter with no concrete release, config or measurement.",
+        "confidence": "medium"
+      },
+      "final": 0
+    },
+    {
+      "id": "152477cfe84bfdf1",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xymgfb/do_you_think_the_vibe_coded_stigma_will_go_away/",
+      "title": "Do you think the “vibe coded” stigma will go away?",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 75,
+        "comments": 272
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "152477cfe84bfdf1",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Reddit discussion on whether the stigma against vibe-coded apps will fade. Commenters argue low-effort AI output will persist, that quality signals will shift, and that clone-heavy releases will make people more accepting. No technique or data.",
+        "whyItMatters": "Community sentiment about AI-built software, with no technical content relevant to Claude Code workflows.",
+        "confidence": "high"
+      },
+      "final": 0
+    },
+    {
+      "id": "fce24371da12eb18",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz4vpr/mythos_52_max_effort/",
+      "title": "Mythos 5.2 Max Effort",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 66,
+        "comments": 13
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "fce24371da12eb18",
+        "relevance": 0,
+        "novelty": 0,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "opinion",
+        "summary": "Joke post titled Mythos 5.2 Max Effort, with comments making philosophy puns and a single image link. No technical content about Claude Code, models, or effort settings.",
+        "whyItMatters": "Meme content with no information for an engineer working with Claude Code.",
+        "confidence": "high"
+      },
+      "final": 0
+    },
+    {
+      "id": "2645e2fe576dabeb",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xz9anh/i_tried_building_gta_manila_before_gta_6_using/",
+      "title": "I tried building GTA Manila before GTA 6, using Claude",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 53,
+        "comments": 22
+      },
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "2645e2fe576dabeb",
+        "relevance": 1,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 0,
+        "hypeFlags": [],
+        "category": "workflow",
+        "summary": "Personal two-week experiment building an unfinished Manila open-world game in Unreal Engine with Claude on a $100 subscription. Comments call it impressive. The excerpt gives no workflow, prompts, config, or measured results.",
+        "whyItMatters": "A vibe-coded game demo without a reusable technique; it does not change how a multi-repo engineer works with agents.",
+        "confidence": "medium"
+      },
+      "final": 1.8
+    },
+    {
+      "id": "f86c8136bdee50ce",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice/commit/215f3bea7490a4852e2e32c3550dfbad6b18f1a1",
+      "title": "chore(subagents-report): update Last Updated badge to Nov 18, 2026 v2… (+9 more)",
+      "sources": [
+        "claude-code-best-practice"
+      ],
+      "tier": 3,
+      "engagement": {},
+      "verdict": "drop",
+      "reason": "low-score",
+      "score": {
+        "id": "f86c8136bdee50ce",
+        "relevance": 2,
+        "novelty": 1,
+        "actionability": 0,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "Automated commit log from a Claude Code best-practice repo's daily drift-check. It tracks Claude Code v2.1.327 against official docs and lists ON HOLD items such as /tui classic, /help argument, /status broken-files, and /autocompact. It shows badge and star-count updates but not the actual changes.",
+        "whyItMatters": "Could flag undocumented Claude Code command and settings changes, but the excerpt gives no specifics to verify.",
+        "confidence": "low"
+      },
+      "final": 3.5
+    },
+    {
+      "id": "8f7a055a1b360233",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "title": "v2.1.327",
+      "sources": [
+        "claude-code-releases"
+      ],
+      "tier": 1,
+      "engagement": {},
+      "verdict": "must",
+      "score": {
+        "id": "8f7a055a1b360233",
+        "relevance": 3,
+        "novelty": 3,
+        "actionability": 3,
+        "evidence": 3,
+        "hypeFlags": [],
+        "category": "release",
+        "summary": "Claude Code v2.1.327 release notes. Adds claude mcp add-json reading server JSON from stdin so tokens stay off the command line. /status now lists broken agent, skill, command and output style files, keybinding errors, and hook matchers that never match. Also fixes .mcp.json being clobbered by project-scope mcp add/remove and /export overwriting files without asking.",
+        "whyItMatters": "Stdin MCP config keeps secrets out of shell history, and /status surfacing dead hook matchers directly affects a hooks-heavy setup.",
+        "tryThis": "Pipe server JSON into claude mcp add-json <name> so the token never hits the command line; run /status to find dead hook matchers.",
+        "confidence": "high"
+      },
+      "final": 10
+    },
+    {
+      "id": "e45fd791e1fe03c2",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+      "title": "External sandboxes for coding agents",
+      "sources": [
+        "simon-willison-claude-code",
+        "simon-willison-coding-agents"
+      ],
+      "tier": 2,
+      "engagement": {},
+      "verdict": "must",
+      "score": {
+        "id": "e45fd791e1fe03c2",
+        "relevance": 2,
+        "novelty": 2,
+        "actionability": 2,
+        "evidence": 2,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "Simon Willison and Prime Radiant describe an external sandbox pattern where agent-executed code runs in a separate sandbox while the agent stays outside. Three open-source sandbox servers (v86, Apple Containers, QEMU via Quicksand) expose the same localhost API, with an allow-list proxy and credential replacement. Claude Code, Pi or Codex can be pointed at it.",
+        "whyItMatters": "Offers a concrete way to isolate Claude Code's code execution and keep credentials away from the agent without changing the agent itself.",
+        "tryThis": "Run one of the external-sandbox servers locally and point Claude Code's code-execution calls at its localhost API.",
+        "confidence": "medium"
+      },
+      "final": 7.7
+    },
+    {
+      "id": "58cd665e6f5cc86f",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xyqicb/i_got_tired_of_my_quota_getting_nuked_because_of/",
+      "title": "I got tired of my quota getting nuked because of expired cache. So built a plugin (cache-maxxing) for Claude Code that shows when your prompt cache is about to expire and the cost of sending a new message",
+      "sources": [
+        "r-claudeai"
+      ],
+      "tier": 3,
+      "engagement": {
+        "points": 151,
+        "comments": 35
+      },
+      "verdict": "skim",
+      "score": {
+        "id": "58cd665e6f5cc86f",
+        "relevance": 2,
+        "novelty": 1,
+        "actionability": 2,
+        "evidence": 1,
+        "hypeFlags": [],
+        "category": "tool",
+        "summary": "A Claude Code plugin, cache-maxxing, that shows how long the prompt cache has before expiry and the cost of sending a new message. A commenter notes the same info can be put in the statusline, and asks whether the timer resets during long-running tasks.",
+        "whyItMatters": "Prompt cache expiry is a real quota cost driver, and a small plugin makes it visible during a session.",
+        "tryThis": "Add a statusline script that shows time left on the 1-hour prompt cache.",
+        "confidence": "medium"
+      },
+      "final": 5.2
+    }
+  ]
+}
