@@ -30,6 +30,7 @@
     "https://www.anthropic.com/news/public-benefit-fund",
     "https://www.anthropic.com/news/s1-sec",
     "https://www.anthropic.com/news/features",
+    "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
     "https://www.anthropic.com/news/roadshow-launch",
     "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
     "https://www.anthropic.com/news/expanding-partnership-gsa",
@@ -50,8 +51,7 @@
     "https://www.anthropic.com/news/genesis-mission-commitment",
     "https://www.anthropic.com/news/cyber-verification-program",
     "https://www.anthropic.com/news/claude-frontier-academy",
-    "https://www.anthropic.com/news/barclays-scales-claude",
-    "https://www.anthropic.com/news/accenture-embedded-evaluation"
+    "https://www.anthropic.com/news/barclays-scales-claude"
   ],
   "claude-blog": [
     "https://claude.com/resources/articles/interactive-connectors-full-tool",
