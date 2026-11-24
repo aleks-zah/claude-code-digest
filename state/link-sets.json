@@ -56,12 +56,12 @@
   ],
   "claude-blog": [
     "https://claude.com/resources/articles/interactive-connectors-full-tool",
+    "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
     "https://claude.com/resources/articles/j-crew-style-advisor-with-claude",
     "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude",
     "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
     "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
-    "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
-    "https://claude.com/resources/articles/code-review-is-now-generally-available"
+    "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud"
   ],
   "humanlayer": [
     "https://www.humanlayer.dev/blog/humanlayer-joins-factory",
